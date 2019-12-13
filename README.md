@@ -39,7 +39,7 @@ function isPowerOfTwo(x) {
 ```
 * Powers of 3
 ```javascript
-unction largestPower(n){
+function largestPower(n){
   let k = 0;
   while (Math.pow(3, k) < n) k++;
     return k - 1;
@@ -49,7 +49,7 @@ unction largestPower(n){
 ```javascript
 function factorial(n){
   if (n === 0) return 1;
-  if (n < 0 || n > 12) throw new RangeError;
+  if (n < 0 || n > 12) throw new RangeError();
   let res = 1;
   for (let i = 1; i <= n; i++) {
     res *= i;
