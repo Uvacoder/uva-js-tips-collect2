@@ -57,3 +57,24 @@ function factorial(n){
   return res;
 }
 ```
+* Sum of the first nth term of Series
+```javascript
+function SeriesSum(n) {
+  if (n === 0) return '0.00';
+  let sum = 1;
+  for (let i = 4; i < n * 3; i += 3) {
+    sum = sum + 1/i;
+  }
+  return String(sum.toFixed(2));
+}
+```
+* Filter the number
+```javascript
+const FilterString = function(value) {
+  let str = '';
+  for (let i = 0; i < value.length; i++) {
+    if (!isNaN(value[i])) str += value[i];
+  }
+  return Number(str);
+}
+```
