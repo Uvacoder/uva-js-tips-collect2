@@ -78,3 +78,17 @@ const FilterString = function(value) {
   return Number(str);
 }
 ```
+* Is integer safe to use?
+```javascript
+const SafeInteger = (n) => Number.isSafeInteger(n);
+```
+* Invert values
+```javascript
+function invert(array) {
+   if (array.length === 0) return [];
+   for (let i = 0; i < array.length; i++) {
+     array[i] = -array[i];
+   }
+   return array;
+}
+```
