@@ -100,3 +100,17 @@ function apple(x){
   else return 'Help yourself to a honeycomb Yorkie for the glovebox.';
 }
 ```
+* You're a square!
+```javascript
+const isSquare = function(n) {
+   return Math.sqrt(n) % 1 === 0;
+}
+```
+* Beginner Series #4 Cockroach
+```javascript
+const cockroachSpeed = (s) => Math.floor(s * 1e+5 / 3600);
+```
+* Holiday VIII - Duty Free
+```javascript
+const dutyFree = (normPrice, discount, hol) => Math.floor(hol/(normPrice * discount * 0.01));
+```
