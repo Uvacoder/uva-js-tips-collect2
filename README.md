@@ -114,3 +114,15 @@ const cockroachSpeed = (s) => Math.floor(s * 1e+5 / 3600);
 ```javascript
 const dutyFree = (normPrice, discount, hol) => Math.floor(hol/(normPrice * discount * 0.01));
 ```
+* Lario and Muigi Pipe Problem
+```javascript
+function pipeFix(numbers){
+  const min = Math.min(...numbers);
+  const max = Math.max(...numbers);
+  const arr = [];
+  for (let i = min; i <= max; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+```
