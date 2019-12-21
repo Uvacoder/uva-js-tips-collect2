@@ -132,3 +132,24 @@ function expressionMatter(a, b, c) {
   return Math.max(a + b + c, a * b * c, (a + b) * c, a * (b + c), a * b + c, a + b * c);
 }
 ```
+* For Twins: 2. Math operations
+```javascript
+function iceBrickVolume(radius, bottleLength, rimLength) {
+  return (2 * radius ** 2) * (bottleLength - rimLength);
+}
+```
+* Vowel Count
+```javascript
+function getCount(str) {
+  let vowelsCount = 0;
+  let arrVowels = ['a', 'e', 'i', 'o', 'u' ];
+  for (let i = 0; i < str.length; i++) {
+    for (let j = 0; j < arrVowels.length; j++) {
+      if (str[i] === arrVowels[j]) {
+        vowelsCount++;
+        }
+    }
+  }
+  return vowelsCount;
+}
+```
