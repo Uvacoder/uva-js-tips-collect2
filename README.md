@@ -153,3 +153,7 @@ function getCount(str) {
   return vowelsCount;
 }
 ```
+* Count Odd Numbers below n
+```javascript
+const oddCount = (n) => Math.floor(n / 2);
+```
