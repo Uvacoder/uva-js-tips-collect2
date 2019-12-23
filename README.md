@@ -157,3 +157,14 @@ function getCount(str) {
 ```javascript
 const oddCount = (n) => Math.floor(n / 2);
 ```
+* Calculate Price Excluding VAT
+```javascript
+function excludingVatPrice(price) {
+  if (price === null) return -1;
+  else return +(price / 1.15).toFixed(2);
+}
+```
+* Binary Addition
+```javascript
+const addBinary = (a,b) => (a + b).toString(2);
+```
