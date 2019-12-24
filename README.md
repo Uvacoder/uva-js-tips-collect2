@@ -168,3 +168,34 @@ function excludingVatPrice(price) {
 ```javascript
 const addBinary = (a,b) => (a + b).toString(2);
 ```
+* Filling an array (part 1)
+```javascript
+const arr = N => {
+  const arr = [];
+  for (let i = 0; i < N; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+```
+* Count the Monkeys!
+```javascript
+function monkeyCount(n) {
+  const arr = [];
+  for (let i = 1; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+```
+* Sum Arrays
+```javascript
+function sum (numbers) {
+  if (numbers.length === 0) return 0;
+  let count = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    count += numbers[i];
+  }
+  return count;     
+}
+```
