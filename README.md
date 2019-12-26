@@ -199,3 +199,17 @@ function sum (numbers) {
   return count;     
 }
 ```
+* To square(root) or not to square(root)
+```javascript
+function squareOrSquareRoot(array) {
+  const arr = [];
+  for (let i = 0; i < array.length; i++) {
+    if (Number.isInteger(Math.sqrt(array[i]))) {
+      arr.push(Math.sqrt(array[i]));
+    } else {
+      arr.push(Math.pow(array[i], 2));
+    }
+  }
+  return arr; 
+}
+```
