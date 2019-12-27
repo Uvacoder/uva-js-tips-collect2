@@ -213,3 +213,13 @@ function squareOrSquareRoot(array) {
   return arr; 
 }
 ```
+* Is every value in the array an array?
+```javascript
+const arrCheck = value => {
+  if (value.length === 0) return true;
+  for (let i = 0; i < value.length; i++) {
+    if (Array.isArray(value[i]) === false) return false;
+  }
+  return true;
+}
+```
