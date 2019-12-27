@@ -223,3 +223,13 @@ const arrCheck = value => {
   return true;
 }
 ```
+* A Needle in the Haystack
+```javascript
+function findNeedle(haystack) {
+let index = 0;
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] === 'needle') index = i;
+  }
+  return `found the needle at position ${index}`;
+}
+```
