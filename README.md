@@ -233,3 +233,34 @@ let index = 0;
   return `found the needle at position ${index}`;
 }
 ```
+* Difference of Volumes of Cuboids
+```javascript
+const findDifference = (a, b) => {
+  let vol1 = 1;
+  let vol2 = 1;
+  for (let i = 0, j = 0; i < a.length, j < b.length; i++, j++) {
+    vol1 *= a[i]; vol2 *= b[j];
+  }
+  return Math.abs(vol1 - vol2);
+}
+```
+* Enumerable Magic #3 - Does My List Include This?
+```javascript
+function include(arr, item){
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === item) return true;
+  }
+  return false;
+}
+```
+* Counting sheep...
+```javascript
+function countSheeps(arrayOfSheep) {
+  if (arrayOfSheep.length === 0) return 0;
+  let count = 0;
+  for (let i = 0; i < arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i] === true) count++;
+  }
+  return count;
+}
+```
