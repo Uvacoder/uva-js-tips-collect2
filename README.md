@@ -264,3 +264,34 @@ function countSheeps(arrayOfSheep) {
   return count;
 }
 ```
+* Find the first non-consecutive number
+```javascript
+function firstNonConsecutive (arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i + 1] !== arr[i] + 1) return arr[i + 1];
+  }
+  return null;
+}
+```
+* Odd or Even?
+```javascript
+function oddOrEven(array) {
+   let sum = 0;
+   for (let i = 0; i < array.length; i++) {
+     sum += array[i];
+   }
+   return sum % 2 === 0 ? 'even' : 'odd';
+}
+```
+* Divide and Conquer
+```javascript
+function divCon(x){
+  let sum1 = 0;
+  let sum2 = 0;
+  for (let i = 0; i < x.length; i++) {
+    if (typeof x[i] === 'number') sum1 += x[i];
+    if (typeof x[i] === 'string') sum2 += +x[i];
+  }
+  return sum1 - sum2;
+}
+```
