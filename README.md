@@ -295,3 +295,36 @@ function divCon(x){
   return sum1 - sum2;
 }
 ```
+* Sum of Odd Cubed Numbers
+```javascript
+function cubeOdd(arr) {
+  let sum = 0;
+  const cubedArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] !== 'number') return undefined;
+    cubedArr.push(Math.pow(arr[i], 3));
+    if (Math.abs(cubedArr[i]) % 2 === 1) sum += cubedArr[i];
+  }
+return sum;
+}
+```
+* Remove the minimum
+```javascript
+function removeSmallest(numbers) {
+  if (numbers.length === 0) return [];
+  let min = numbers[0];
+  let index = 0;
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] < min) {
+      min = numbers[i];
+      index = i;
+      }
+  }
+  const arr = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (index === i) continue;
+    arr.push(numbers[i]);
+    }
+  return arr;
+}
+```
