@@ -328,3 +328,17 @@ function removeSmallest(numbers) {
   return arr;
 }
 ```
+* Sum without highest and lowest number
+```javascript
+function sumArray(array) {
+  if (array === null || array.length <= 1) return 0;
+//   const min = Math.min(...array);
+//   const max = Math.max(...array);
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+//   return sum - min - max;
+return sum - Math.min(...array) - Math.max(...array);
+}
+```
