@@ -342,3 +342,21 @@ function sumArray(array) {
 return sum - Math.min(...array) - Math.max(...array);
 }
 ```
+* Find the divisors!
+```javascript
+function divisors(integer) {
+  const arr = []; 
+  for (let i = 2; i < integer; i++) {
+    if (integer % i === 0) arr.push(i);
+  }
+  return arr.length === 0 ? `${integer} is prime` : arr;
+}
+```
+* Be Concise IV - Index of an element in an array
+```javascript
+const find = (array, element) => array.includes(element) ? array.indexOf(element) : 'Not found';
+```
+* Array.diff
+```javascript
+const array_diff = (a, b) => a.filter(el => !b.includes(el));
+```
