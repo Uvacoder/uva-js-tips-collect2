@@ -360,3 +360,17 @@ const find = (array, element) => array.includes(element) ? array.indexOf(element
 ```javascript
 const array_diff = (a, b) => a.filter(el => !b.includes(el));
 ```
+* filterEvenLengthWords
+```javascript
+const filterEvenLengthWords = words => words.filter(el => el.length % 2 === 0);
+```
+* Find how many times did a team from a given country win the Champions League?
+```javascript
+function countWins (winnerList, country) {
+  let winNum = 0;
+  for (let i = 0; i < winnerList.length; i++) {
+    if (winnerList[i].country === country) winNum++;
+  }
+  return winNum;
+}
+```
