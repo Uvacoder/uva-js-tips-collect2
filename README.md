@@ -374,3 +374,31 @@ function countWins (winnerList, country) {
   return winNum;
 }
 ```
+* Sum of differences in array
+```javascript
+function sumOfDifferences(arr) {
+ const sorted = arr.sort((a, b) => b - a)
+let sum = 0;
+for(let i = 0; i < arr.length - 1; i++) {
+  sum += sorted[i] - sorted[i + 1];
+
+}
+return sum;
+}
+```
+* Well of Ideas - Easy Version
+```javascript
+function well(x){
+  const numOfIdeas = x.filter(el => el === 'good').length;
+  if (numOfIdeas >= 1 && numOfIdeas <=2) return 'Publish!';
+  else if (numOfIdeas > 2) return 'I smell a series!';
+  else return 'Fail!'
+}
+```
+* Find the Slope
+```javascript
+function slope(points) {
+  if (points[2] - points[0] === 0) return 'undefined';
+  else return ((points[3] - points[1]) / (points[2] - points[0])).toString();
+}
+```
