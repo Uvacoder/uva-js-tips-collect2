@@ -402,3 +402,15 @@ function slope(points) {
   else return ((points[3] - points[1]) / (points[2] - points[0])).toString();
 }
 ```
+* Array plus array
+```javascript
+function arrayPlusArray(arr1, arr2) {
+  const sum1 = arr1.reduce((acc, cur) => acc + cur);
+  const sum2 = arr2.reduce((acc, cur) => acc + cur);
+  return sum1 + sum2; 
+}
+```
+* Sum Arrays
+```javascript
+const sum = numbers => numbers.reduce((acc, el) => acc + el, 0);
+```
