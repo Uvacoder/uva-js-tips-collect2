@@ -409,3 +409,15 @@ function arrayPlusArray(arr1, arr2) {
 ```javascript
 const sum = numbers => numbers.reduce((acc, el) => acc + el, 0);
 ```
+* SpeedCode #2 - Array Madness
+```javascript
+function arrayMadness(a, b) {
+  const sumOfSquares = a.reduce((acc, el) => acc + Math.pow(el, 2), 0);
+  const sumOfCubes = b.reduce((acc, el) => acc + Math.pow(el, 3), 0);
+  return sumOfSquares >= sumOfCubes;
+}
+```
+* Convert number to reversed array of digits
+```javascript
+const digitize = n => String(n).split('').map(el => +el).reverse();
+```
