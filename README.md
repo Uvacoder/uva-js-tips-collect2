@@ -421,3 +421,8 @@ function arrayMadness(a, b) {
 ```javascript
 const digitize = n => String(n).split('').map(el => +el).reverse();
 ```
+* Enumerable Magic #25 - Take the First N Elements
+```javascript
+const take = (arr, n) => arr.splice(0, n); 
+//const take = (arr, n) => arr.slice(0, n);
+```
