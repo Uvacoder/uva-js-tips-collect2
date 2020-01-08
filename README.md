@@ -426,3 +426,10 @@ const digitize = n => String(n).split('').map(el => +el).reverse();
 const take = (arr, n) => arr.splice(0, n); 
 //const take = (arr, n) => arr.slice(0, n);
 ```
+* Remove First and Last Character Part Two
+```javascript
+function array(arr) {
+  const res = arr.split(',').slice(1, -1).join(' ');
+  return res.length >= 1 ? res : null;
+}
+```
