@@ -433,3 +433,13 @@ function array(arr) {
   return res.length >= 1 ? res : null;
 }
 ```
+* Abbreviate a Two Word Name
+```javascript
+function abbrevName(name){
+  let ind;
+  for (let i = 0; i < name.length; i++) {
+    if (name.charAt(i) === ' ') ind = i;
+  }
+  return `${name[0]}.${name[ind + 1]}`.toUpperCase();
+}
+```
