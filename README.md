@@ -443,3 +443,13 @@ function abbrevName(name){
   return `${name[0]}.${name[ind + 1]}`.toUpperCase();
 }
 ```
+* Double Char
+```javascript
+function doubleChar(str) {
+  let newStr = '';
+  for (let i = 0; i < str.length; i++) {
+    newStr += str[i] + str[i];
+  }
+  return newStr;
+}
+```
