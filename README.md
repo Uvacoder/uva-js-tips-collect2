@@ -464,3 +464,14 @@ function lowercaseCount(str){
   return count;
 }
 ```
+* Spacify
+```javascript
+function spacify(str) {
+  let newStr = '';
+  for (let i = 0; i < str.length; i++) {
+    newStr += str[i] + ' ';
+  }
+  console.log(newStr)
+  return newStr.slice(0, -1);
+}
+```
