@@ -453,3 +453,14 @@ function doubleChar(str) {
   return newStr;
 }
 ```
+* Regex count lowercase letters
+```javascript
+function lowercaseCount(str){
+  let count =  0;
+  const string = 'abcdefghijklmnopqrstuvwxyz';
+  for (let i = 0; i < str.length; i++) {
+    if (string.includes(str[i])) count++;
+  }
+  return count;
+}
+```
