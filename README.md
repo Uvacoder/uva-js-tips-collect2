@@ -475,3 +475,15 @@ function spacify(str) {
   return newStr.slice(0, -1);
 }
 ```
+* Unique In Order
+```javascript
+const uniqueInOrder = (iterable) => {
+  let res = [];
+  for(let i = 0; i < iterable.length; i++) {
+    if(iterable[i + 1] !== iterable[i]) {
+      res.push(iterable[i]);
+    }
+  }
+  return res;
+}
+```
