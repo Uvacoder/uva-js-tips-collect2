@@ -487,3 +487,15 @@ const uniqueInOrder = (iterable) => {
   return res;
 }
 ```
+* Thinking & Testing : Something capitalized
+```javascript
+function testit(s){
+  let arr = s.split('');
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i + 1]=== ' ' || arr[i + 1] === undefined) {
+      arr[i] = arr[i].toUpperCase();
+    }
+  }
+return arr.join('');
+}
+```
