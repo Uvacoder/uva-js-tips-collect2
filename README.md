@@ -499,3 +499,17 @@ function testit(s){
 return arr.join('');
 }
 ```
+* Mumbling
+```javascript
+function accum(s) {
+	const arr = [];
+	for (let i = 0; i < s.length; i++) {
+    let str = s[i].toUpperCase();
+    for (let j = 0; j < i; j++ ) {
+        str += s[i].toLowerCase();
+      }
+      arr.push(str);
+    }
+    return arr.join('-');
+}
+```
