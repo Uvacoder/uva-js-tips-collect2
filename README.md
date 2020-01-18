@@ -513,3 +513,9 @@ function accum(s) {
     return arr.join('-');
 }
 ```
+* Do you speak "English"?
+```javascript
+function spEng(sentence){
+  return sentence.toLowerCase().includes('english');
+}
+```
