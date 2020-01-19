@@ -519,3 +519,13 @@ function spEng(sentence){
   return sentence.toLowerCase().includes('english');
 }
 ```
+* Don't give me five!
+```javascript
+function dontGiveMeFive(start, end) {
+  let count = 0;
+  for (let i = start; i < end + 1; i++) {
+    if (!String(i).includes('5')) count++;
+  }
+  return count;
+}
+```
