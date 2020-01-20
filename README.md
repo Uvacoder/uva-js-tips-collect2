@@ -372,7 +372,7 @@ function countWins (winnerList, country) {
 * Sum of differences in array
 ```javascript
 function sumOfDifferences(arr) {
- const sorted = arr.sort((a, b) => b - a)
+ const sorted = arr.sort((a, b) => b - a);
 let sum = 0;
 for(let i = 0; i < arr.length - 1; i++) {
   sum += sorted[i] - sorted[i + 1];
@@ -471,7 +471,7 @@ function spacify(str) {
   for (let i = 0; i < str.length; i++) {
     newStr += str[i] + ' ';
   }
-  console.log(newStr)
+  console.log(newStr);
   return newStr.slice(0, -1);
 }
 ```
@@ -528,4 +528,14 @@ function dontGiveMeFive(start, end) {
   }
   return count;
 }
+```
+* Regex validate PIN code
+```javascript
+const validatePIN = pin => {
+    let str = '0123456789';
+    for (let i = 0; i < pin.length; i++) {
+     if (!(str.includes(pin[i]))) return false;
+    }
+    return pin.length === 4 || pin.length === 6;
+ }
 ```
