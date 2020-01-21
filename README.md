@@ -539,3 +539,14 @@ const validatePIN = pin => {
     return pin.length === 4 || pin.length === 6;
  }
 ```
+* Credit Card Mask
+```javascript
+function maskify(cc) {
+  if (cc.length < 4) return cc;
+  let res = '';
+  for (let i = 0; i < cc.length - 4; i++) {
+    res += '#';
+  }
+  return res + cc.slice(-4);
+}
+```
