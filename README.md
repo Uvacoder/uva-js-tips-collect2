@@ -550,3 +550,10 @@ function maskify(cc) {
   return res + cc.slice(-4);
 }
 ```
+* Tail Swap
+```javascript
+function tailSwap(arr) {
+  const resArr = arr.join(':').split(':');
+  return [`${resArr[0]}:${resArr[3]}`, `${resArr[2]}:${resArr[1]}`];
+}
+```
