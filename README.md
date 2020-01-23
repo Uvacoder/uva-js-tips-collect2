@@ -557,3 +557,11 @@ function tailSwap(arr) {
   return [`${resArr[0]}:${resArr[3]}`, `${resArr[2]}:${resArr[1]}`];
 }
 ```
+* Numbers to Letters
+```javascript
+function switcher(x){
+  const str = ' zyxwvutsrqponmlkjihgfedcba!? ';
+  const arr = x.map(el => str[el]);
+  return arr.join('');
+}
+```
