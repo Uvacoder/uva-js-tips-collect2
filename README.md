@@ -565,3 +565,7 @@ function switcher(x){
   return arr.join('');
 }
 ```
+* 5 without numbers !!
+```javascript
+const unusualFive = () => 'apple'.length;
+```
