@@ -569,3 +569,9 @@ function switcher(x){
 ```javascript
 const unusualFive = () => 'apple'.length;
 ```
+* Vowel remover
+```javascript
+function shortcut(string){
+  return string.replace(/[aouie]/g,'');
+}
+```
