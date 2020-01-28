@@ -587,3 +587,9 @@ function getNumberFromString(s) {
   return +s.replace(/\D/g, '');
 }
 ```
+* Correct the mistakes of the character recognition software
+```javascript
+function correct(string) {
+	return string.replace(/5/g, 'S').replace(/0/g, 'O').replace(/1/g, 'I');
+}
+```
