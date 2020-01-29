@@ -593,3 +593,9 @@ function correct(string) {
 	return string.replace(/5/g, 'S').replace(/0/g, 'O').replace(/1/g, 'I');
 }
 ```
+* Name Shuffler
+```javascript
+function nameShuffler(str) {
+  return str.split(' ').reverse().join(' ');
+}
+```
