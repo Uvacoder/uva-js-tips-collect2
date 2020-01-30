@@ -612,3 +612,17 @@ function findLongest(str) {
   return longest;
 }
 ```
+* Every possible sum of two digits
+```javascript
+function digits(num){
+
+  const arr = String(num).split('');
+  const arrSum = [];
+  
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++)
+    arrSum.push(+arr[i] + +arr[j]);
+  }
+  return arrSum;
+}
+```
