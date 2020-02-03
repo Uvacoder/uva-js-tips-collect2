@@ -646,3 +646,14 @@ function type(value) {
   return typeof value;
 }
 ```
+* Tortoise racing
+```javascript
+function race(v1, v2, g) {
+    if (v1 >= v2) return null;
+    const time = g / (v2 - v1);
+    const hour = Math.trunc(time);
+    const min = Math.trunc((time * 60) % 60);
+    const sec = Math.trunc((time * 3600) % 60);
+    return [hour, min, sec];
+}
+```
