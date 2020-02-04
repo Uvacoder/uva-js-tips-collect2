@@ -657,3 +657,12 @@ function race(v1, v2, g) {
     return [hour, min, sec];
 }
 ```
+* Highest and Lowest
+```javascript
+function highAndLow(numbers){
+  const arr = numbers.split(' ');
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  return `${max} ${min}`;
+}
+```
