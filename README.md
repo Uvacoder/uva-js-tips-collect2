@@ -666,3 +666,10 @@ function highAndLow(numbers){
   return `${max} ${min}`;
 }
 ```
+* Descending Order
+```javascript
+function descendingOrder(n){
+  const arr = String(n).split('').sort((a, b) => b - a);
+  return +arr.join('');
+}
+```
