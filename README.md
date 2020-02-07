@@ -673,3 +673,17 @@ function descendingOrder(n){
   return +arr.join('');
 }
 ```
+* Can Santa save Christmas?
+```javascript
+function determineTime(durations){
+  let sum = 0;
+  for (let i = 0; i < durations.length; i++) {
+    const arr = durations[i].split(':');
+    let hours = arr[0] * 3600;
+    let minutes = arr[1] * 60;
+    let seconds = +arr[2];
+    sum += hours + minutes + seconds;
+  }
+  return sum <= 86400;
+}
+```
