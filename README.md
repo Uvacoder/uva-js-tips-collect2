@@ -714,3 +714,8 @@ function determineTime(durations){
   
  const greet = (language) => data[language];
 ```
+* Duck Duck Goose
+```javascript
+const duckDuckGoose = (players, goose) => players[(goose - 1) % players.length].name;
+```
+
