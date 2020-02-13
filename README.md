@@ -718,4 +718,16 @@ function determineTime(durations){
 ```javascript
 const duckDuckGoose = (players, goose) => players[(goose - 1) % players.length].name;
 ```
+* Check the exam
+```javascript
+function checkExam(arr1, arr2) {
+  let score = 0;
+  for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] === arr2[i]) score += 4;
+      if (arr1[i] !== arr2[i] && arr2[i] === '') score += 0;
+      if (arr1[i] !== arr2[i] && arr2[i] !== '') score -= 1;
+  }
+  return score > 0 ? score : 0;
+}
+```
 
