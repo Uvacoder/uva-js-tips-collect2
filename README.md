@@ -730,7 +730,7 @@ function checkExam(arr1, arr2) {
   return score > 0 ? score : 0;
 }
 ```
-* If you can't sleep, just count sheep!!
+* If you can't sleep, just count sheep!
 ```javascript
 let countSheep = function (num){
   let s = '';
