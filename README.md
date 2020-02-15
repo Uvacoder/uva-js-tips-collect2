@@ -740,4 +740,18 @@ let countSheep = function (num){
   return s;
 }
 ```
+* Total amount of points
+```javascript
+function points(games) {
+  let points = 0;
+
+  for(let i = 0; i < games.length; i++) {
+    let x = parseInt(games[i].split(':')[0]);
+    let y = parseInt(games[i].split(':')[1]);
+    if(x === y) points += 1;
+    if(x > y) points += 3;
+  }
+  return points;
+}
+```
 
