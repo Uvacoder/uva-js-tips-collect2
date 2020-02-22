@@ -754,4 +754,8 @@ function points(games) {
   return points;
 }
 ```
+* Breaking chocolate problem
+```javascript
+const breakChocolate = (n, m) => n === 0 || m === 0 ? 0 : n * m - 1;
+```
 
