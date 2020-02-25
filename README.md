@@ -758,4 +758,8 @@ function points(games) {
 ```javascript
 const breakChocolate = (n, m) => n === 0 || m === 0 ? 0 : n * m - 1;
 ```
+* Sum of angles
+```javascript
+const angle = (n) => 180 * (n - 2);
+```
 
