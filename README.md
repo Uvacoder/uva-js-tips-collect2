@@ -762,4 +762,11 @@ const breakChocolate = (n, m) => n === 0 || m === 0 ? 0 : n * m - 1;
 ```javascript
 const angle = (n) => 180 * (n - 2);
 ```
+* I love you, a little , a lot, passionately ... not at all
+```javascript
+function howMuchILoveYou(nbPetals) {
+    const flower = ['not at all', 'I love you', 'a little', 'a lot', 'passionately', 'madly'];
+    return flower[nbPetals % 6];
+}
+```
 
