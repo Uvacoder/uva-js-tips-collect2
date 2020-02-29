@@ -769,4 +769,10 @@ function howMuchILoveYou(nbPetals) {
     return flower[nbPetals % 6];
 }
 ```
+* DNA to RNA Conversion
+```javascript
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, 'U');
+}
+```
 
