@@ -775,4 +775,14 @@ function DNAtoRNA(dna) {
   return dna.replace(/T/g, 'U');
 }
 ```
+* Is it a palindrome?
+```javascript
+function isPalindrome(x) {
+  let strReverse = '';
+  for (let i = 0; i < x.length; i++) {
+    strReverse = x[i] + strReverse;
+  }
+  return x.toLowerCase() === strReverse.toLowerCase();
+}
+```
 
