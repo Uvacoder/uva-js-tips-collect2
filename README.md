@@ -795,5 +795,8 @@ function noSpace(x){
   return newStr;
 }
 ```
-
+* Reversed Words
+```javascript
+const reverseWords = str => str.split(' ').reverse().join(' ');
+```
 
