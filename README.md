@@ -799,4 +799,9 @@ function noSpace(x){
 ```javascript
 const reverseWords = str => str.split(' ').reverse().join(' ');
 ```
-
+* Do I get a bonus?
+```javascript
+function bonusTime(salary, bonus) {
+ return bonus == true ?  `\u00A3${salary * 10}` : `\u00A3${salary}`;
+}
+```
