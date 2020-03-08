@@ -805,3 +805,16 @@ function bonusTime(salary, bonus) {
  return bonus == true ?  `\u00A3${salary * 10}` : `\u00A3${salary}`;
 }
 ```
+* Complementary DNA
+```javascript
+function DNAStrand(dna){
+  let compl = '';
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === 'A') compl += 'T';
+    if (dna[i] === 'T') compl += 'A';
+    if (dna[i] === 'C') compl += 'G';
+    if (dna[i] === 'G') compl += 'C';
+  }
+  return compl;
+}
+```
