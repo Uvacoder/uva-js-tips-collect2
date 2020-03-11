@@ -825,3 +825,17 @@ function validateCode(code) {
   return (code.startsWith(1) || code.startsWith(2) || code.startsWith(3));
 }
 ```
+* Flatten and sort an array
+```javascript
+function flattenAndSort(array) {
+  let arr = [];
+  array.forEach(el => {
+    if (Number.isInteger(el)) {
+      arr.push(el);
+    } else if (Array.isArray(el) && el.length) {
+      arr = [...arr, ...el];
+    }
+  })
+  return arr.sort((a, b) => a - b);
+}
+```
