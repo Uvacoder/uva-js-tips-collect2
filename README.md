@@ -839,3 +839,9 @@ function flattenAndSort(array) {
   return arr.sort((a, b) => a - b);
 }
 ```
+* FIXME: Replace all dots
+```javascript
+const replaceDots = function(str) {
+  return str.replace(/[.]/g, '-');
+}
+```
