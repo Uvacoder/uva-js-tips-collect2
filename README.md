@@ -845,3 +845,7 @@ const replaceDots = function(str) {
   return str.replace(/[.]/g, '-');
 }
 ```
+* MakeUpperCase
+```javascript
+const makeUpperCase = (str) => str.toUpperCase();
+```
