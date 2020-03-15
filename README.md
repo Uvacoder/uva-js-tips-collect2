@@ -849,3 +849,9 @@ const replaceDots = function(str) {
 ```javascript
 const makeUpperCase = (str) => str.toUpperCase();
 ```
+* The Wide-Mouthed frog!
+```javascript
+function mouthSize(animal) {
+  return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
+  }
+```
