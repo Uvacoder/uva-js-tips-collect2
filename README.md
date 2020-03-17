@@ -855,3 +855,7 @@ function mouthSize(animal) {
   return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
   }
 ```
+* 5 without numbers !!
+```javascript
+const unusualFive = () => 'apple'.length;
+```
