@@ -859,3 +859,9 @@ function mouthSize(animal) {
 ```javascript
 const unusualFive = () => 'apple'.length;
 ```
+* Santa's Naughty List
+```javascript
+function findChildren(santasList, children) {
+  return santasList.filter((el, i)=> children.includes(el) && i === santasList.indexOf(el)).sort();
+}
+```
