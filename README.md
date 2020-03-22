@@ -865,3 +865,13 @@ function findChildren(santasList, children) {
   return santasList.filter((el, i)=> children.includes(el) && i === santasList.indexOf(el)).sort();
 }
 ```
+* Invert values
+```javascript
+function invert(array) {
+   if (array.length === 0) return [];
+   for (let i = 0; i < array.length; i++) {
+     array[i] = -array[i];
+   }
+   return array;
+}
+```
