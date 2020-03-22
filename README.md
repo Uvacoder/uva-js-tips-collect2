@@ -875,3 +875,8 @@ function invert(array) {
    return array;
 }
 ```
+```javascript
+function invert(array) {
+   return array.map(el => -el);
+}
+```
