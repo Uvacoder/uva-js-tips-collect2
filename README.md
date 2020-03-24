@@ -880,3 +880,11 @@ function invert(array) {
    return array.map(el => -el);
 }
 ```
+* SpeedCode #2 - Array Madness
+```javascript
+function arrayMadness(a, b) {
+  const sumOfSquares = a.reduce((acc, el) => acc + Math.pow(el, 2), 0);
+  const sumOfCubes = b.reduce((acc, el) => acc + Math.pow(el, 3), 0);
+  return sumOfSquares >= sumOfCubes;
+}
+```
