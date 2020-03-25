@@ -888,3 +888,15 @@ function arrayMadness(a, b) {
   return sumOfSquares >= sumOfCubes;
 }
 ```
+* Sum Arrays
+```javascript
+function sum (numbers) {
+    "use strict";
+  if (numbers.length ===0) return 0;
+  let count = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    count += numbers[i];
+  }
+  return count;     
+}
+```
