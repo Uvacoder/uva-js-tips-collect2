@@ -900,3 +900,6 @@ function sum (numbers) {
   return count;     
 }
 ```
+```javascript
+const sum = numbers => numbers.reduce((acc, el) => acc + el, 0);
+```
