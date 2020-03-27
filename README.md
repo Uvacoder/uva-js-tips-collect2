@@ -903,3 +903,9 @@ function sum (numbers) {
 ```javascript
 const sum = numbers => numbers.reduce((acc, el) => acc + el, 0);
 ```
+* Grasshopper - Array Mean
+```javascript
+const findAverage = function (nums) {
+  return nums.reduce((acc, el) => acc + el, 0) / nums.length;
+}
+```
