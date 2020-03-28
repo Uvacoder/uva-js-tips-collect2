@@ -909,3 +909,9 @@ const findAverage = function (nums) {
   return nums.reduce((acc, el) => acc + el, 0) / nums.length;
 }
 ```
+* Get number from string
+```javascript
+function getNumberFromString(s) {
+  return +s.replace(/\D/g, '');
+}
+```
