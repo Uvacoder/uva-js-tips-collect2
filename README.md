@@ -915,3 +915,10 @@ function getNumberFromString(s) {
   return +s.replace(/\D/g, '');
 }
 ```
+* Create Phone Number
+```javascript
+function createPhoneNumber(numbers){
+  numbers.splice(6, 0, '-');
+  return `(${numbers.join('').slice(0, 3)}) ${numbers.join('').slice(3)}`;
+}
+```
