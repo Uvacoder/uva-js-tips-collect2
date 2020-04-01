@@ -922,3 +922,9 @@ function createPhoneNumber(numbers){
   return `(${numbers.join('').slice(0, 3)}) ${numbers.join('').slice(3)}`;
 }
 ```
+* Incrementer
+```javascript
+function incrementer(nums) {
+    return nums.map((el, i) => (el + i + 1) % 10);
+}
+```
