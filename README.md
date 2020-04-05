@@ -928,3 +928,14 @@ function incrementer(nums) {
     return nums.map((el, i) => (el + i + 1) % 10);
 }
 ```
+* Lottery machine
+```javascript
+function lottery(str){
+    const num = str.replace(/[a-z, A-Z]/ig,'');
+    if ( num === '') {
+        return 'One more run!';
+    } else {
+        return num.split('').filter((el, i) => i === num.indexOf(el) ).join('');
+    }
+}
+```
