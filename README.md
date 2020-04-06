@@ -939,3 +939,9 @@ function lottery(str){
     }
 }
 ```
+* Remove duplicate words
+```javascript
+function removeDuplicateWords(s) {
+    return s.split(' ').filter((el, i, arr) => i === arr.indexOf(el)).join(' ');
+}
+```
