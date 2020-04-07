@@ -960,3 +960,14 @@ function checkThreeAndTwo(arr) {
   return (a === 2 || b === 2 || c === 2) && (a === 3 || b === 3 || c === 3);
 }
 ```
+* makeBackronym
+```javascript
+const makeBackronym = function(string){
+  let res = '';
+  const arr = string.toUpperCase().split('');
+    for (let i = 0; i < arr.length; i++){
+      res = res + dict[arr[i]] + ' ';
+    }
+  return res.slice(0, -1);
+};
+```
