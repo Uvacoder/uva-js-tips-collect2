@@ -971,3 +971,14 @@ const makeBackronym = function(string){
   return res.slice(0, -1);
 };
 ```
+* Make a function that does arithmetic!
+```javascript
+function arithmetic(a, b, operator){
+  const obj = {};
+  obj.add = a + b;
+  obj.subtract = a - b;
+  obj.multiply = a * b;
+  obj.divide = a / b;
+  return obj[operator];
+}
+```
