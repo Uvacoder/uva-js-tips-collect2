@@ -945,3 +945,18 @@ function removeDuplicateWords(s) {
     return s.split(' ').filter((el, i, arr) => i === arr.indexOf(el)).join(' ');
 }
 ```
+* Check three and two
+```javascript
+function checkThreeAndTwo(arr) {
+  let a = 0;
+  let b = 0;
+  let c = 0;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] === "a") a += 1;
+    if (arr[i] === "b") b += 1;
+    if (arr[i] === "c") c += 1;
+  }
+
+  return (a === 2 || b === 2 || c === 2) && (a === 3 || b === 3 || c === 3);
+}
+```
