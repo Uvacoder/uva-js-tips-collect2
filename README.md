@@ -982,3 +982,10 @@ function arithmetic(a, b, operator){
   return obj[operator];
 }
 ```
+* Job Matching #1
+```javascript
+function match(candidate, job) {
+  if(!candidate.minSalary || !job.maxSalary) throw "Error";
+  return (candidate.minSalary * 0.9) <= job.maxSalary;
+}
+```
