@@ -989,3 +989,9 @@ function match(candidate, job) {
   return (candidate.minSalary * 0.9) <= job.maxSalary;
 }
 ```
+* Add property to every object in array
+```javascript
+for (let i = 0; i < questions.length; i++){
+  questions[i].usersAnswer = null;
+}
+```
