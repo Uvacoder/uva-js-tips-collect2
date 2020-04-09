@@ -998,3 +998,20 @@ for (let i = 0; i < questions.length; i++){
 ```javascript
 questions.map(el => el.usersAnswer = null);
 ```
+* Coding Meetup #2 - Higher-Order Functions Series - Greet developers
+```javascript
+function greetDevelopers(list) {
+ list.forEach(function(el){
+   el.greeting = `Hi ${el.firstName}, what do you like the most about ${el.language}?`;
+  });
+  return list;
+}
+```
+```javascript
+function greetDevelopers(list) {
+  for (let i = 0; i < list.length; i++){
+    list[i].greeting = `Hi ${list[i].firstName}, what do you like the most about ${list[i].language}?`
+  }
+  return list;
+}
+```
