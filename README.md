@@ -1029,3 +1029,15 @@ function solution(num){
 ```javascript
 const towerCombination = n => n === 1 ? 1 : n * towerCombination(n - 1);
 ```
+*
+```javascript
+function numObj(s){
+  const arr = [];
+  for (let i = 0; i < s.length; i++){
+    const obj = {};
+    obj[s[i]] = String.fromCharCode(s[i])
+    arr.push(obj);
+  }
+  return arr;
+}
+```
