@@ -1025,3 +1025,10 @@ function solution(num){
     return sum;
 }
 ```
+* 8 towers
+```javascript
+function towerCombination(n){
+  console.log(n);
+  return n === 1 ? 1 : n * towerCombination(n - 1);
+}
+```
