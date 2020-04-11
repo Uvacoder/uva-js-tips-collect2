@@ -1029,7 +1029,7 @@ function solution(num){
 ```javascript
 const towerCombination = n => n === 1 ? 1 : n * towerCombination(n - 1);
 ```
-*
+* Numbers to Objects
 ```javascript
 function numObj(s){
   const arr = [];
