@@ -1041,3 +1041,12 @@ function numObj(s){
   return arr;
 }
 ```
+```javascript
+function numObj(s){
+  const arr = [];
+  for (let i = 0; i < s.length; i++){
+    arr.push({[s[i]]: String.fromCharCode(s[i])});
+  }
+  return arr;
+}
+```
