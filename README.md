@@ -1060,3 +1060,20 @@ function countDevelopers(list) {
   return count;
 }
 ```
+```javascript
+function countDevelopers(list) {
+  return list.filter(el => el.continent === 'Europe' && el.language === 'JavaScript').length;
+}
+```
+* Math engine
+```javascript
+function mathEngine(arr) {
+  if (!arr) return 0;
+  let prodOfPos = 1;
+  let sumOfNeg = 0;
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] < 0 ? sumOfNeg +=arr[i] : prodOfPos *=arr[i];
+  }
+  return prodOfPos + sumOfNeg;
+}
+```
