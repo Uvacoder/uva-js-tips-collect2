@@ -1077,3 +1077,15 @@ function mathEngine(arr) {
   return prodOfPos + sumOfNeg;
 }
 ```
+* The wheat/rice and chessboard problem
+```javascript
+function squaresNeeded(grains){
+    let i = 0;
+    if (grains === 0) return 0;
+    while (grains / 2 >= 1) {
+        grains = grains / 2;
+        i++;
+    }
+    return i + 1;
+}
+```
