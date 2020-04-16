@@ -1089,3 +1089,17 @@ function squaresNeeded(grains){
     return i + 1;
 }
 ```
+* What is my name score? #1
+```javascript
+function nameScore(name){
+  let sum = 0;
+  let obj = {};
+  for(let i = 0; i < name.length; i++){
+    for(let key in alpha){
+      if(key.includes(name[i].toUpperCase())) sum = sum + alpha[key];
+    }
+  }
+  obj[name] = sum;
+  return obj;
+}
+```
