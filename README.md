@@ -1103,3 +1103,17 @@ function nameScore(name){
   return obj;
 }
 ```
+* The Office I - Outed
+```javascript
+function outed(meet, boss){
+  let totalScore = 0;
+  let rating;
+  
+  for (let key in meet){
+    if (key === boss) meet[key] = 2 * meet[key];
+    totalScore += meet[key];
+  }
+  rating = totalScore / Object.keys(meet).length;
+  return rating <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
+}
+```
