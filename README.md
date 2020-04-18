@@ -1117,3 +1117,15 @@ function outed(meet, boss){
   return rating <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
 }
 ```
+* How many days are we represented in a foreign country?
+```javascript
+function daysRepresented(trips){
+  const days = [];
+  for (let i = 0; i < trips.length; i++){
+    for (let j = trips[i][0]; j <= trips[i][1]; j++){
+      if (!days.includes(j)) days.push(j);
+    }
+  }
+  return days.length;
+}
+```
