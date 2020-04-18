@@ -1129,3 +1129,14 @@ function daysRepresented(trips){
   return days.length;
 }
 ```
+```javascript
+function daysRepresented(trips){
+  const obj = {};
+  for (let i = 0; i < trips.length; i++){
+    for (let j = trips[i][0]; j <= trips[i][1]; j++){
+      if (!obj[j]) obj[j] = 1;
+    }
+  }
+  return Object.keys(obj).length;
+}
+```
