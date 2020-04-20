@@ -1140,3 +1140,19 @@ function daysRepresented(trips){
   return Object.keys(obj).length;
 }
 ```
+* Permute a Palindrome
+```javascript
+function permuteAPalindrome (input) { 
+  const obj = {};
+  for (let i = 0; i < input.length; i++){
+    if (obj[input[i]]) obj[input[i]]++;
+      else obj[input[i]] = 1;
+  }
+  let count = 0;
+  for (let key in obj){
+    if (obj[key] % 2 === 1) count++;
+  }
+  return count <= 1;
+  
+}
+```
