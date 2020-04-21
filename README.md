@@ -1156,3 +1156,13 @@ function permuteAPalindrome (input) {
   
 }
 ```
+```javascript
+function permuteAPalindrome (input) { 
+  const obj = {};
+  for (let i of input){
+    if (obj[i]) delete obj[i];
+      else obj[i] = 1;
+  }
+  return Object.keys(obj).length <= 1;
+}
+```
