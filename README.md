@@ -1166,3 +1166,22 @@ function permuteAPalindrome (input) {
   return Object.keys(obj).length <= 1;
 }
 ```
+* Most valuable character
+```javascript
+function solve(st) {
+     const obj = {};
+     for (let i = 0; i < st.length; i++){
+       obj[st[i]] = st.lastIndexOf(st[i]) - st.indexOf(st[i]);
+     }
+     const array = Object.values(obj);
+     const max = Math.max(...array);
+     
+     const arr = [];
+     for (let key in obj){
+       if (obj[key] === max) arr.push(key);
+     }
+     
+     const res = arr.sort();
+   return res[0];
+}
+```
