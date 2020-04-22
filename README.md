@@ -1219,3 +1219,6 @@ function isSameLanguage(list) {
   return list.every(el => el.language === list[0].language);
 }
 ```
+```javascript
+const isSameLanguage = list => list.every(e => e.language === list[0].language);
+```
