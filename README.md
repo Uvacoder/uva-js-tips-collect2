@@ -1208,3 +1208,14 @@ function boredom(staff){
   return score >= 100 ? 'party time!!': score < 100 && score > 80 ? 'i can handle this' : 'kill me now'; 
 }
 ```
+* Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?
+```javascript
+function isSameLanguage(list) {
+  const arr = [];
+  for (let item in list){
+    arr.push(list[item].language);
+  }
+  console.log(arr)
+  return list.every(el => el.language === list[0].language);
+}
+```
