@@ -1222,3 +1222,13 @@ function isSameLanguage(list) {
 ```javascript
 const isSameLanguage = list => list.every(e => e.language === list[0].language);
 ```
+* Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
+```javascript
+function isRubyComing(list) {
+  const arr = [];
+  for (let item in list){
+     arr.push(list[item].language);
+  }
+  return arr.includes('Ruby');
+}
+```
