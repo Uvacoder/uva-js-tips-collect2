@@ -1240,3 +1240,6 @@ function isRubyComing(list) {
   return false;
 }
 ```
+```javascript
+const isRubyComing = list => list.some(el => el.language === 'Ruby');
+```
