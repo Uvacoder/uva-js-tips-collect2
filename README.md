@@ -1243,3 +1243,24 @@ function isRubyComing(list) {
 ```javascript
 const isRubyComing = list => list.some(el => el.language === 'Ruby');
 ```
+* String Reordering
+```javascript
+function sentence(List) {
+  const arr = [];
+  for (let el in List){
+    arr.push(Object.keys(List[el])[0]);
+  }
+  
+  const arrSorted = arr.sort((a, b) => a - b);
+  
+  const res = [];
+  for (let item in arrSorted){
+    for (let obj in List){
+      if (arrSorted[item] === Object.keys(List[obj])[0]) {
+        res.push(Object.values(List[obj])[0]);
+      }
+    }
+  }
+  return res.join(' ');
+}
+```
