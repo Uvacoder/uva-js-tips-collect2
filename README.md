@@ -1282,3 +1282,10 @@ function sentence(List) {
   return str.trim();
 }
 ```
+```javascript
+function sentence(List) {
+  const arr = List.sort((a, b) => Object.keys(a) - Object.keys(b));
+  const str = arr.map(obj => Object.values(obj)).join(' ');
+  return str;
+}
+```
