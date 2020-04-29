@@ -1264,3 +1264,21 @@ function sentence(List) {
   return res.join(' ');
 }
 ```
+```javascript
+function sentence(List) {
+  const arr = [];
+  for (let el in List){
+    arr.push(Object.keys(List[el])[0]);
+  }
+  console.log(arr);
+  const arrSorted = arr.sort((a, b) => a - b);
+  console.log(arrSorted);
+  let str = '';
+  for (let item in arrSorted){
+    for (let obj in List){
+      if (arrSorted[item] === Object.keys(List[obj])[0])  str += Object.values(List[obj])[0] + ' ';
+    }
+  }
+  return str.trim();
+}
+```
