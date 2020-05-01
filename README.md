@@ -1289,3 +1289,20 @@ function sentence(List) {
   return str;
 }
 ```
+* Coding Meetup #7 - Higher-Order Functions Series - Find the most senior developer
+```javascript
+function findSenior(list) {
+  const arr = [];
+  for (let i = 0; i < list.length; i++){
+    arr.push(list[i].age);
+  }
+  arr.sort((a, b) => b - a);
+  const max = Math.max(...arr);
+  
+  const res = [];
+  for (let i = 0; i < list.length; i++){
+    if (list[i].age === max) res.push(list[i]);
+  }
+  return res;
+}
+```
