@@ -1306,3 +1306,9 @@ function findSenior(list) {
   return res;
 }
 ```
+```javascript
+const findSenior = list => {
+  let max = Math.max(...list.map(el => el.age));
+  return list.filter(el => el.age === max);
+}
+```
