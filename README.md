@@ -1312,3 +1312,14 @@ const findSenior = list => {
   return list.filter(el => el.age === max);
 }
 ```
+* Coding Meetup #10 - Higher-Order Functions Series - Create usernames
+```javascript
+function addUsername(list) {
+  const date = new Date().getFullYear();
+  for (let el in list){
+    list[el].username = (list[el].firstName).toLowerCase() + (list[el].lastName)[0].toLowerCase() + (date - (list[el].age));
+  }
+  console.log(list);
+  return list;
+}
+```
