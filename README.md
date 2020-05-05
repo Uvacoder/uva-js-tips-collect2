@@ -1323,3 +1323,19 @@ function addUsername(list) {
   return list;
 }
 ```
+* Simple fibonacci strings
+```function solve(n){
+         let f0 = '0';
+         let f1 = '01';
+         let f2;
+       if (n === 0) return f0;
+       if (n === 1) return f1;
+         let i = 2;
+         while (i <= n){
+           f2 = f1 + f0;
+           f0 = f1;
+           f1 = f2;
+           i++;
+         }
+       return f2;
+   }```
