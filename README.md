@@ -1324,7 +1324,8 @@ function addUsername(list) {
 }
 ```
 * Simple fibonacci strings
-```function solve(n){
+```javascript
+function solve(n){
          let f0 = '0';
          let f1 = '01';
          let f2;
@@ -1338,4 +1339,5 @@ function addUsername(list) {
            i++;
          }
        return f2;
-   }```
+   }
+```
