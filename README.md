@@ -1357,3 +1357,19 @@ function nthFibo(n) {
   return f3;
 }
 ```
+* Fibonacci Reloaded
+```javascript
+function fib(n) {
+  let f1 = 0;
+  let f2 = 1;
+  let f3;
+  if (n === 1) return f1;
+  if (n === 2) return f2;
+  for (let i = 3; i <= n; i++){
+    f3 = f1 + f2;
+    f1 = f2;
+    f2 = f3;
+  }
+  return f3;
+}
+```
