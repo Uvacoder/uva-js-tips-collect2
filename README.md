@@ -1422,3 +1422,25 @@ function allContinents(list) {
               list.some(el => el.continent === 'Oceania');
 }
 ```
+* Walk-up Stairs
+```javascript
+function stairs(n){  
+  if (n < 1) return '';
+  let str = '';
+  let s = ' ';
+  for (let i = 1; i <= n; i++){
+    for (let j = 1; j <= 4 * (n - i); j++){
+      str += s;
+    }
+    for (let k = 1; k <= i; k++){
+      str += (k % 10) + s;
+    }
+    for (let k = i; k >= 1; k--){
+      if (k !== 1) str += (k % 10) + s;
+        else str += (k % 10);
+    }
+    if (i !== n) str += '\n';
+  }
+  return str;
+}
+```
