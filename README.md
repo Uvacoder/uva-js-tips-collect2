@@ -1406,3 +1406,12 @@ function allContinents(list) {
   return true;
 }
 ```
+```javascript
+function allContinents(list) {
+  const arr = [];
+  for (let el in list){
+    if (arr.indexOf(list[el].continent) === -1) arr.push(list[el].continent);
+  }
+  return arr.length === 5;
+}
+```
