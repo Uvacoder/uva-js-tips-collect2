@@ -1385,3 +1385,24 @@ function calculate (num1, operation, num2) {
    }
 }
 ```
+* Coding Meetup #8 - Higher-Order Functions Series - Will all continents be represented?
+```javascript
+function allContinents(list) {
+  const obj = {
+    Africa: 0, 
+    Americas: 0,
+    Asia: 0,
+    Europe: 0,
+    Oceania: 0
+  };
+  for (let item in list){
+    for (let key in obj){
+      if (list[item].continent === key) obj[key]++;
+    }
+  }
+  for (let key in obj){
+    if (obj[key] === 0) return false;
+  }
+  return true;
+}
+```
