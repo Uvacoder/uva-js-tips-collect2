@@ -1415,3 +1415,10 @@ function allContinents(list) {
   return arr.length === 5;
 }
 ```
+```javascript
+function allContinents(list) {
+  return list.some(el => el.continent === 'Africa') && list.some(el => el.continent === 'Americas') &&
+            list.some(el => el.continent === 'Asia') && list.some(el => el.continent === 'Europe') &&
+              list.some(el => el.continent === 'Oceania');
+}
+```
