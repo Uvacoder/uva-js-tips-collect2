@@ -1444,3 +1444,22 @@ function stairs(n){
   return str;
 }
 ```
+```javascript
+function stairs(n){
+  const res = [];
+  for(let i = 1; i <= n; i++){
+    const arr = [];
+    for(let j = 1; j <= 2 *(n - i); j++){
+      arr.push(" ");
+    }
+    for(let k = 1; k <= i; k++){
+      arr.push(k % 10);
+    }
+    for(let l = i; l >= 1; l--){
+      arr.push(l % 10);
+    }
+    res.push(arr.join(" "));
+  }
+  return res.join("\n");
+}
+```
