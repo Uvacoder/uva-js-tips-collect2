@@ -1484,3 +1484,14 @@ function pattern(n) {
  return output;
 }
 ```
+```javascript
+function pattern(n){
+  if (n === 1) return '1';
+  let output = "1\n";
+  for (let i = 2; i <= n; i++){
+     output += 1 + '*'.repeat(i - 1) + i; 
+    (i !== n) ? output += '\n' : output;
+  }
+  return output;
+}
+```
