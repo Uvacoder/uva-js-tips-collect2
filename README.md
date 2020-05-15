@@ -1463,3 +1463,15 @@ function stairs(n){
   return res.join("\n");
 }
 ```
+* Number-Star ladder
+```javascript
+function pattern(n){
+  let output = '1';
+  let star = '*';
+  for (let i = 2; i <= n; i++) {
+    output += `\n1${star}${i}`;
+    star += '*';
+  }
+ return output;
+}
+```
