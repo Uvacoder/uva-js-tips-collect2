@@ -1494,3 +1494,13 @@ function getAverageAge(list) {
    return Math.round(sum/list.length);
 }
 ```
+* Coding Meetup #12 - Higher-Order Functions Series - Find GitHub admins
+```javascript
+function findAdmin(list, lang) {
+  const arrAdmin = [];
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].language === lang && list[i].githubAdmin === 'yes') arrAdmin.push(list[i]);
+  }
+  return arrAdmin;
+}
+```
