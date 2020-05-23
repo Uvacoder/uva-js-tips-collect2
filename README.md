@@ -1540,3 +1540,18 @@ function isLanguageDiverse(list) {
   return list.every(el => max / el <= 2);
 }
 ```
+* Coding Meetup #16 - Higher-Order Functions Series - Ask for missing details
+```javascript
+function askForMissingDetails(list) {
+  const arr = [];
+  for (let el in list) {
+    for (let key in list[el]) {
+      if (list[el][key] === null) {
+        list[el].question = `Hi, could you please provide your ${key}.`;
+        arr.push(list[el]);
+      }
+    }
+  }
+  return arr;
+}
+```
