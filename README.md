@@ -690,29 +690,26 @@ function determineTime(durations){
 * Welcome!
 ```javascript
  const data = {
-	english: 'Welcome',
-  czech: 'Vitejte',
-  danish: 'Velkomst',
-  dutch: 'Welkom',
-  estonian: 'Tere tulemast',
-  finnish: 'Tervetuloa',
-  flemish: 'Welgekomen',
-  french: 'Bienvenue',
-  german: 'Willkommen',
-  irish: 'Failte',
-  italian: 'Benvenuto',
-  latvian: 'Gaidits',
-  lithuanian: 'Laukiamas',
-  polish: 'Witamy',
-  spanish: 'Bienvenido',
-  swedish: 'Valkommen',
-  welsh: 'Croeso',
-  IP_ADDRESS_INVALID: 'Welcome',
-  IP_ADDRESS_NOT_FOUND: 'Welcome',
-  IP_ADDRESS_REQUIRED: 'Welcome',
-  }
-  
- const greet = (language) => data[language];
+   english: 'Welcome',
+   czech: 'Vitejte',
+   danish: 'Velkomst',
+   dutch: 'Welkom',
+   estonian: 'Tere tulemast',
+   finnish: 'Tervetuloa',
+   flemish: 'Welgekomen',
+   french: 'Bienvenue',
+   german: 'Willkommen',
+   irish: 'Failte',
+   italian: 'Benvenuto',
+   latvian: 'Gaidits',
+   lithuanian: 'Laukiamas',
+   polish: 'Witamy',
+   spanish: 'Bienvenido',
+   swedish: 'Valkommen',
+   welsh: 'Croeso',
+   }
+   
+  const greet = (language) => data[language] || data.english;
 ```
 * Duck Duck Goose
 ```javascript
@@ -1553,5 +1550,16 @@ function askForMissingDetails(list) {
     }
   }
   return arr;
+}
+```
+* Coding Meetup #14 - Higher-Order Functions Series - Order the food
+```javascript
+function orderFood(list) {
+  const obj = {};
+  for (let el in list) {
+    if (!obj[list[el].meal]) obj[list[el].meal] = 1;
+      else obj[list[el].meal]++;
+  }
+  return obj;
 }
 ```
