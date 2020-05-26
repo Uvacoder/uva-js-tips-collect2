@@ -1563,3 +1563,19 @@ function orderFood(list) {
   return obj;
 }
 ```
+* Coding Meetup #15 - Higher-Order Functions Series - Find the odd names
+```javascript
+function findOddNames(list) {
+   const arr = [];
+   let sum;
+  for (let el in list) {
+    sum = 0;
+    for (let i = 0; i < list[el].firstName.length; i++) {
+      sum += list[el].firstName.charCodeAt(i);
+    }
+    if (sum % 2) arr.push(list[el]);
+  }
+  
+  return arr;
+}
+```
