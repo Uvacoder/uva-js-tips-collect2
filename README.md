@@ -1579,3 +1579,8 @@ function findOddNames(list) {
   return arr;
 }
 ```
+```javascript
+findOddNames = list => {
+  return list.filter(el => (el.firstName).split('').reduce((a, b) => a + b.charCodeAt(), 0) % 2);
+}
+```
