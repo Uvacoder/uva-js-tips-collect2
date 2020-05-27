@@ -1584,3 +1584,13 @@ findOddNames = list => {
   return list.filter(el => (el.firstName).split('').reduce((a, b) => a + b.charCodeAt(), 0) % 2);
 }
 ```
+* Coding Meetup #17 - Higher-Order Functions Series - Sort by programming language
+```javascript
+function sortByLanguage(list) {
+  return list.sort((a,b) => 
+  (a.language > b.language) ? 1 : 
+  (b.language > a.language) ? -1: 
+  (a.firstName > b.firstName) ? 1 : 
+  (b.firstName > a.firstName)? -1: 0);
+}
+```
