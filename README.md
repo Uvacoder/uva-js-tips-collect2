@@ -1594,3 +1594,11 @@ function sortByLanguage(list) {
   (b.firstName > a.firstName)? -1: 0);
 }
 ```
+```javascript
+function sortByLanguage(list) {
+  return list.sort((a, b) => {
+    if (a.language === b.language) return a.firstName > b.firstName ? 1 : a.firstName === b.firstName ? 0 : -1;
+  return a.language > b.language ? 1 : a.language === b.language ? 0 : -1;
+  });
+}
+```
