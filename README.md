@@ -1602,3 +1602,17 @@ function sortByLanguage(list) {
   });
 }
 ```
+* Multiplication table
+```javascript
+multiplicationTable = function(size) {
+  const arrRes = [];
+  for (let i = 1; i <= size; i++){
+    const arr = [];
+    for (let j = 1; j <= size; j++){
+      arr.push(i * j);
+    }
+    arrRes.push(arr);
+  }
+  return arrRes;
+}
+```
