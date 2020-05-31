@@ -1616,3 +1616,18 @@ multiplicationTable = function(size) {
   return arrRes;
 }
 ```
+* Moving Zeros To The End
+```javascript
+const moveZeros = function (arr) {
+  let count = 0;
+  const arrRes = [];
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] === 0) count++;
+    if (arr[i] !== 0) arrRes.push(arr[i]);
+  }
+  for (let i = 1; i <= count; i++){
+    arrRes.push(0);
+  }
+  return arrRes;
+}
+```
