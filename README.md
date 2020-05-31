@@ -1631,3 +1631,20 @@ const moveZeros = function (arr) {
   return arrRes;
 }
 ```
+* Test's results
+```javascript
+function testResult(arr) {
+  const average = +(arr.reduce((a,b)=> a + b, 0) / arr.length).toFixed(3);
+   const obj = {
+        "h" : 0,
+        "a" : 0,
+        "l" : 0
+   }
+    for (let el of arr){
+        if (el >= 9) obj["h"]++;
+        else if (el >= 7) obj["a"]++;
+        else obj["l"]++;
+    }        
+  return (obj["a"] === 0 && obj["l"]  === 0) ? [average, obj, "They did well"] : [average, obj];     
+}
+```
