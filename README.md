@@ -1648,3 +1648,14 @@ function testResult(arr) {
   return (obj["a"] === 0 && obj["l"]  === 0) ? [average, obj, "They did well"] : [average, obj];     
 }
 ```
+* Dictionary from two lists
+```javascript
+function createDict(keys, values){
+  const obj = {};
+  for (let i = 0; i < keys.length; i++){
+      obj[keys[i]] = values[i];
+      if (i >= values.length) obj[keys[i]] = null;
+  }
+  return obj;
+}
+```
