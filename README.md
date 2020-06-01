@@ -1659,3 +1659,11 @@ function createDict(keys, values){
   return obj;
 }
 ```
+* Alternating between three values
+```javascript
+function f(x, cc) { 
+  if (x === cc.a) return x = cc.b;
+   if (x === cc.b) return x = cc.c;
+    if (x === cc.c) return x = cc.a;
+}
+```
