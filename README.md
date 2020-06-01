@@ -1667,3 +1667,9 @@ function f(x, cc) {
     if (x === cc.c) return x = cc.a;
 }
 ```
+* Semi-Optional
+```javascript
+function wrap(value) {
+  return {value : value}; 
+}
+```
