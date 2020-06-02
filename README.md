@@ -1673,3 +1673,11 @@ function wrap(value) {
   return {value : value}; 
 }
 ```
+* Grasshopper - Create the rooms
+```javascript
+const rooms = {
+  room1: {name: 'A', description: 'descriptionA', completed: true},
+  room2: {name: 'B', description: 'descriptionB', completed: false},
+  room3: {name: 'C', description: 'descriptionC', completed: true},
+}
+```
