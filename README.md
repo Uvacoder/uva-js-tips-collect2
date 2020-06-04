@@ -1700,3 +1700,12 @@ const rooms = {
   }
 }
 ```
+* What's wrong with these identifiers?
+```javascript
+const Person = {
+  '1stname': "John",
+  'second-name': "Doe",
+  'email@ddress': "john.doe@email.com",
+  'male.female': "M"
+};
+```
