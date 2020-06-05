@@ -1709,3 +1709,14 @@ const Person = {
   'male.female': "M"
 };
 ```
+* TV channels
+```javascript
+function redarr(arr) {
+  const newArr = arr.sort().filter((el, i) => i === arr.indexOf(el));
+  const obj = {};
+  for (let i = 0; i < newArr.length; i++){
+    obj[i] = newArr[i];
+  }
+  return obj;
+}
+```
