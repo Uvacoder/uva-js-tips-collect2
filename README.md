@@ -1724,3 +1724,8 @@ function redarr(arr) {
 ```javascript
 questions.map(el => el.usersAnswer = null);
 ```
+```javascript
+for (let i = 0; i < questions.length; i++){
+  questions[i].usersAnswer = null;
+}
+```
