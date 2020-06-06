@@ -1720,3 +1720,7 @@ function redarr(arr) {
   return obj;
 }
 ```
+* Add property to every object in array
+```javascript
+questions.map(el => el.usersAnswer = null);
+```
