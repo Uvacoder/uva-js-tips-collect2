@@ -1729,3 +1729,14 @@ for (let i = 0; i < questions.length; i++){
   questions[i].usersAnswer = null;
 }
 ```
+* Ironman Triathlon
+```javascript
+function iTri(s){
+  const distance = 2.4 + 112 + 26.2;
+  return s === 0 ? 'Starting Line... Good Luck!' :
+ s < 2.4 ? {'Swim' : `${(distance - s).toFixed(2)} to go!`} :
+ s < 114.4 ? {'Bike' : `${(distance - s).toFixed(2)} to go!`} :
+ s < 130.6 ? {'Run' : `${(distance - s).toFixed(2)} to go!`} :
+ s < distance ? {'Run' : `Nearly there!`} : "You're done! Stop running!";
+}
+```
