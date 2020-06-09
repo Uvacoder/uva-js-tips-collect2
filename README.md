@@ -1747,3 +1747,28 @@ function bloodAlcoholContent(drinks, weight, sex, time){
   return +bac.toFixed(4);
 }
 ```
+* Simple Fun #286: Chemistry
+```javascript
+function chemistry(first, second) {
+  function gcd(x, y) {
+    while(y) {
+      let t = y;
+      y = x % y;
+      x = t;
+    }
+    return x;
+  }
+  const a = +first.slice(first.indexOf('(') + 1, first.indexOf(')'));
+  const b = +first.slice(first.lastIndexOf('(') + 1, first.lastIndexOf(')'));
+  const c = +second.slice(second.indexOf('(') + 1, second.indexOf(')'));
+  const d = +second.slice(second.lastIndexOf('(') + 1, second.lastIndexOf(')'));
+  
+  const X = first.slice(0, first.indexOf('('));
+  const Y = first.slice(first.indexOf(')') + 1, first.lastIndexOf('('));
+  const Z = second.slice(0, second.indexOf('('));
+  const T = second.slice(second.indexOf(')') + 1, second.lastIndexOf('('));
+  
+  return [`${Z}(${c/gcd(c, b)})${Y}(${b/gcd(c, b)})`,
+   `${X}(${a/gcd(a, d)})${T}(${d/gcd(a, d)})`]
+}
+```
