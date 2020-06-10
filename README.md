@@ -1772,3 +1772,13 @@ function chemistry(first, second) {
    `${X}(${a/gcd(a, d)})${T}(${d/gcd(a, d)})`]
 }
 ```
+* What's up next?
+```javascript
+function nextItem(xs, item) {
+  const arr = [];
+  for(let el of xs){
+    if(arr.length === 1) return el;
+    if(el === item) arr.push(el);
+  }
+}
+```
