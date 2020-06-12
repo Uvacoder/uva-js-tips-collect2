@@ -1793,3 +1793,17 @@ function giveMeFive(obj){
   return arr;
 }
 ```
+* Pyramid Array
+```javascript
+function pyramid(n) {
+  const result = [];
+  for (let i = 1; i <= n; i++){
+    const arr = [];
+    for (let j = 1; j <= i; j++){
+      arr.push(1);
+    }
+    result.push(arr);
+  }
+  return result;
+}
+```
