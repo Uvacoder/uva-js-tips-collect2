@@ -1032,7 +1032,7 @@ function numObj(s){
   const arr = [];
   for (let i = 0; i < s.length; i++){
     const obj = {};
-    obj[s[i]] = String.fromCharCode(s[i])
+    obj[s[i]] = String.fromCharCode(s[i]);
     arr.push(obj);
   }
   return arr;
@@ -1805,5 +1805,15 @@ function pyramid(n) {
     result.push(arr);
   }
   return result;
+}
+```
+* Find the Capitals
+```javascript
+function capital(capitals){
+  const arr = [];
+  for (let el in capitals){
+    arr.push(`The capital of ${capitals[el].state || capitals[el].country} is ${capitals[el].capital}`)
+  }
+  return arr;
 }
 ```
