@@ -1824,3 +1824,11 @@ function getFirstPython(list) {
   return developer ? `${developer.firstName}, ${developer.country}` : "There will be no Python developers";
 }
 ```
+```javascript
+function getFirstPython(list) {
+  for (let el of list){
+    if (el.language === 'Python') return `${el.firstName}, ${el.country}`;
+  }
+  return 'There will be no Python developers';
+}
+```
