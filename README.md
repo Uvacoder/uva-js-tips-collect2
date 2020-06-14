@@ -1817,3 +1817,10 @@ function capital(capitals){
   return arr;
 }
 ```
+* Coding Meetup #4 - Higher-Order Functions Series - Find the first Python developer
+```javascript
+function getFirstPython(list) {
+  const developer = list.find(x => x.language === "Python");
+  return developer ? `${developer.firstName}, ${developer.country}` : "There will be no Python developers";
+}
+```
