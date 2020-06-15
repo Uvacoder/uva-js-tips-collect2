@@ -1832,3 +1832,36 @@ function getFirstPython(list) {
   return 'There will be no Python developers';
 }
 ```
+* Coding Meetup #9 - Higher-Order Functions Series - Is the meetup age-diverse?
+```javascript
+function isAgeDiverse(list) {
+  const obj = {
+    teens: 0,
+    twenties: 0,
+    thirties: 0,
+    forties: 0,
+    fifties: 0,
+    sixties: 0,
+    seventies: 0,
+    eighties: 0,
+    nineties: 0,
+    centenarian: 0
+  }
+  for (let el of list) {
+    if (el.age >= 10 && el.age < 20) obj['teens']++;
+    if (el.age >= 20 && el.age < 30) obj['twenties']++;
+    if (el.age >= 30 && el.age < 40) obj['thirties']++;
+    if (el.age >= 40 && el.age < 50) obj['forties']++;
+    if (el.age >= 50 && el.age < 60) obj['fifties']++;
+    if (el.age >= 60 && el.age < 70) obj['sixties']++;
+    if (el.age >= 70 && el.age < 80) obj['seventies']++;
+    if (el.age >= 80 && el.age < 90) obj['eighties']++;
+    if (el.age >= 90 && el.age < 100) obj['nineties']++;
+    if (el.age >= 100) obj['centenarian']++;
+  }
+  for (let key in obj) {
+    if (obj[key] === 0) return false;
+  }
+  return true;
+}
+```
