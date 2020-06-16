@@ -1865,3 +1865,21 @@ function isAgeDiverse(list) {
   return true;
 }
 ```
+```javascript
+function isAgeDiverse(list) {
+  const arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  list.map(el => {
+    if (el.age >= 10 && el.age < 20) arr[0]++;
+    if (el.age >= 20 && el.age < 30) arr[1]++;
+    if (el.age >= 30 && el.age < 40) arr[2]++;
+    if (el.age >= 40 && el.age < 50) arr[3]++;
+    if (el.age >= 50 && el.age < 60) arr[4]++;
+    if (el.age >= 60 && el.age < 70) arr[5]++;
+    if (el.age >= 70 && el.age < 80) arr[6]++;
+    if (el.age >= 80 && el.age < 90) arr[7]++;
+    if (el.age >= 90 && el.age < 100) arr[8]++;
+    if (el.age >= 100) arr[9]++;
+  })
+  return arr.every(el => el !== 0);
+}
+```
