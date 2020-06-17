@@ -1883,3 +1883,18 @@ function isAgeDiverse(list) {
   return arr.every(el => el !== 0);
 }
 ```
+* Tribonacci Sequence
+```javascript
+function tribonacci(signature,n) {
+  let arr = [];
+  if (n === 0) return arr;
+  if (n <= 3) return signature.slice(0, n);
+  arr[0] = signature[0];
+  arr[1] = signature[1];
+  arr[2] = signature[2];
+  for (let i = 3; i < n; i++) {
+   arr[i] = arr[i - 1] + arr[i - 2] + arr[i - 3];
+  }
+  return arr;
+}
+```
