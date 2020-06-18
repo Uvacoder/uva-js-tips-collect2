@@ -1898,3 +1898,22 @@ function tribonacci(signature,n) {
   return arr;
 }
 ```
+```javascript
+function tribonacci(signature,n){
+  let arr = [];
+  if (n === 0) return arr;
+  if (n <= 3) return signature.slice(0, n);
+  let f1 = signature[0];
+  let f2 = signature[1];
+  let f3 = signature[2];
+  arr = [f1, f2, f3];
+  for (let i = 3; i < n; i++) {
+    let f4 = f1 + f2 + f3;
+    arr.push(f4);
+    f1 = f2;
+    f2 = f3;
+    f3 = f4;
+  }
+  return arr;
+}
+```
