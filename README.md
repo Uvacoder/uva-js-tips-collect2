@@ -1917,3 +1917,19 @@ function tribonacci(signature,n){
   return arr;
 }
 ```
+* Take a Ten Minute Walk
+```javascript
+function isValidWalk(walk) {
+  let n = 0;
+  let s = 0;
+  let e = 0;
+  let w = 0;
+    for (let i = 0; i < walk.length; i++){
+      if (walk[i] === 'n') n++;
+      if (walk[i] === 's') s++;
+      if (walk[i] === 'e') e++;
+      if (walk[i] === 'w') w++;
+    }
+  return walk.length === 10 && n === s && w === e;
+}
+```
