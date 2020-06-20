@@ -1933,3 +1933,13 @@ function isValidWalk(walk) {
   return walk.length === 10 && n === s && w === e;
 }
 ```
+* Find the middle element
+```javascript
+const gimme = function (arr) {
+  let index;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] !== Math.max(...arr) && arr[i] !== Math.min(...arr)) index = i;
+  }
+  return index;
+}
+```
