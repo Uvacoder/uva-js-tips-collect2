@@ -1943,3 +1943,9 @@ const gimme = function (arr) {
   return index;
 }
 ```
+```javascript
+const gimme = function (arr) {
+  const arrSorted = [...arr].sort((a, b) => a - b);
+  return arr.indexOf(arrSorted[1]);
+}
+```
