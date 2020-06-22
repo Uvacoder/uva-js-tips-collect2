@@ -1949,3 +1949,23 @@ const gimme = function (arr) {
   return arr.indexOf(arrSorted[1]);
 }
 ```
+* Highest Rank Number in an Array
+```javascript
+function highestRank(arr){
+  const obj = {};
+  let max;
+  let count = 0;
+  for (let el of arr) {
+    if (obj[el]) obj[el]++;
+      else obj[el] = 1;
+  }
+  console.log(obj);
+  for (let key in obj) {
+    if (obj[key] >= count) {
+      count = obj[key];
+      max = +key;
+    }
+  }
+  return max;
+}
+```
