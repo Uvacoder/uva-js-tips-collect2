@@ -1969,3 +1969,18 @@ function highestRank(arr){
   return max;
 }
 ```
+```javascript
+function highestRank(arr){
+  const obj = {};
+  for (let el of arr) {
+    if (obj[el]) obj[el]++;
+      else obj[el] = 1;
+  }
+  let max = Math.max(...Object.values(obj));
+  let keyMax = 0;
+  for (let key in obj) {
+    if (obj[key] === max && keyMax < key) keyMax = +key;
+  }
+  return keyMax;
+}
+```
