@@ -2012,3 +2012,9 @@ function decode(string) {
   });
 }
 ```
+* Regexp Basics - is it a letter?
+```javascript
+String.prototype.isLetter = function() {
+ return /^[a-z]$/i.test(this);
+}
+```
