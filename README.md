@@ -2018,3 +2018,9 @@ String.prototype.isLetter = function() {
  return /^[a-z]$/i.test(this);
 }
 ```
+* Regexp Basics - is it a vowel?
+```javascript
+String.prototype.vowel = function() {
+  return /^[aouie]$/i.test(this);
+};
+```
