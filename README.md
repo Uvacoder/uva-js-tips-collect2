@@ -2030,3 +2030,7 @@ function remove(s){
   return s.replace(/\b!+/g, '');
 }
 ```
+* Number of Decimal Digits
+```javascript
+const digits = n => n.toString().length;
+```
