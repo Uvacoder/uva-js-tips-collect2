@@ -2022,5 +2022,11 @@ String.prototype.isLetter = function() {
 ```javascript
 String.prototype.vowel = function() {
   return /^[aouie]$/i.test(this);
-};
+}
+```
+* Exclamation marks series #5: Remove all exclamation marks from the end of words
+```javascript
+function remove(s){
+  return s.replace(/\b!+/g, '');
+}
 ```
