@@ -2034,3 +2034,7 @@ function remove(s){
 ```javascript
 const digits = n => n.toString().length;
 ```
+* Take the Derivative
+```javascript
+const derive = (coefficient,exponent) => `${coefficient * exponent}x^${exponent - 1}`;
+```
