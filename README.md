@@ -2052,3 +2052,10 @@ function hydrate(s) {
   return n === 1 ? `1 glass of water` : `${n} glasses of water`;
 }
 ```
+```javascript
+function hydrate(s) {
+  const digits = s.replace(/\D/g, '').split('');
+  const n = digits.reduce((a, b) => a + +b, 0);
+  return n === 1 ? `1 glass of water` : `${n} glasses of water`;
+}
+```
