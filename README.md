@@ -2038,3 +2038,17 @@ const digits = n => n.toString().length;
 ```javascript
 const derive = (coefficient,exponent) => `${coefficient * exponent}x^${exponent - 1}`;
 ```
+* Responsible Drinking
+```javascript
+function hydrate(s) {
+  const arr = s.split(' ');
+  let str = '123456789';
+  let n = 0;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < str.length; j++) {
+      if (arr[i] === str[j]) n += +arr[i];
+    }
+  }
+  return n === 1 ? `1 glass of water` : `${n} glasses of water`;
+}
+```
