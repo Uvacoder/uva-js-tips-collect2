@@ -2059,3 +2059,7 @@ function hydrate(s) {
   return n === 1 ? `1 glass of water` : `${n} glasses of water`;
 }
 ```
+* Dubstep
+```javascript
+const songDecoder = song => song.replace(/(WUB)+/g, ' ').trim();
+```
