@@ -2063,3 +2063,18 @@ function hydrate(s) {
 ```javascript
 const songDecoder = song => song.replace(/(WUB)+/g, ' ').trim();
 ```
+* Smallest Difference
+```javascript
+function smallestDiff(arr1, arr2) {
+  if (arr1.length === 0 && arr2.length === 0) return -1;
+  if (arr1.length === 0) return Math.min(...arr2);
+  if (arr2.length === 0) return Math.min(...arr1);
+  let min = Number.MAX_VALUE;
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (Math.abs(arr1[i] - arr2[j]) < min) min = Math.abs(arr1[i] - arr2[j]);
+    }
+  }
+  return min;
+}
+```
