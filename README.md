@@ -2078,3 +2078,11 @@ function smallestDiff(arr1, arr2) {
   return min;
 }
 ```
+* noobCode 01: SUPERSIZE ME.... or rather, this integer!
+```javascript
+function superSize(num) {
+  const arr = String(num).split('');
+  const arrSorted = arr.sort((a, b) => b - a);
+  return +arrSorted.join('');
+}
+```
