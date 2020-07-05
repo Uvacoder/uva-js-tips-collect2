@@ -2086,3 +2086,11 @@ function superSize(num) {
   return +arrSorted.join('');
 }
 ```
+* Simple Sentences
+```javascript
+function makeSentence(parts) {
+  let res = '';
+  res = parts.join(' ').replace(/\./g, '').replace(/\s,/g, ',').trim();
+  return res + '.';
+}
+```
