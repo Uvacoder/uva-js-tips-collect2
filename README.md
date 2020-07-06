@@ -2094,3 +2094,19 @@ function makeSentence(parts) {
   return res + '.';
 }
 ```
+* Counting Duplicates
+```javascript
+function duplicateCount(text) {
+  const str = text.toLowerCase();
+  const obj = {};
+  for (let el of str) {
+    if (obj[el]) obj[el]++;
+      else obj[el] = 1;
+  }
+  let count = 0;
+  for (let key in obj) {
+    if (obj[key] > 1) count++;
+  }
+  return count;
+}
+```
