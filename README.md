@@ -2110,3 +2110,10 @@ function duplicateCount(text) {
   return count;
 }
 ```
+```javascript
+function duplicateCount(text) {
+  const arr = text.toLowerCase().split('');
+  const res = arr.filter((el, i) => i !== arr.indexOf(el) && i === arr.lastIndexOf(el));
+  return res.length;
+}
+```
