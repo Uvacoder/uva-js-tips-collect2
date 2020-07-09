@@ -2130,3 +2130,17 @@ String.prototype.toAlternatingCase = function () {
     return res;
 }
 ```
+* Rock Off!
+```javascript
+function solve(a, b) {
+  let sA = 0, sB = 0;
+  const l = a.length;
+  for (let i = 0; i < l; i++){
+    if (a[i] > b[i]) sA++;
+    if (a[i] < b[i]) sB++;
+  }
+  return sA > sB ? `${sA}, ${sB}: Alice made "Kurt" proud!` : 
+         sA < sB ? `${sA}, ${sB}: Bob made "Jeff" proud!` :
+         `${sA}, ${sB}: that looks like a "draw"! Rock on!`;
+}
+```
