@@ -2144,3 +2144,13 @@ function solve(a, b) {
          `${sA}, ${sB}: that looks like a "draw"! Rock on!`;
 }
 ```
+* Number of People in the Bus
+```javascript
+const number = function(busStops){
+  let result = 0;
+  for (let i = 0; i < busStops.length; i++) {
+    result += busStops[i][0] - busStops[i][1];
+  }
+  return result;
+}
+```
