@@ -2154,3 +2154,8 @@ const number = function(busStops){
   return result;
 }
 ```
+* Push a hash/an object into array
+```javascript
+const items = [];
+items.push({a: "b", c: "d"});
+```
