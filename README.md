@@ -2213,3 +2213,17 @@ function decode(str) {
   return res;
 }
 ```
+* Your order, please
+```javascript
+function order(words){
+  if (!words.length) return '';
+  const arrOfWords = words.split(' ');
+  const arrOfInd = words.match(/\d/g);
+  const result = [];
+  for (let i = 1; i <= arrOfInd.length; i++) {
+    const index = arrOfInd.indexOf(`${i}`);
+    result.push(arrOfWords[index]);
+  }
+  return result.join(' ');
+}
+```
