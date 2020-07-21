@@ -2241,3 +2241,9 @@ function order(words){
   return arrSorted.join(' ');
 }
 ```
+* Find the lucky numbers
+```javascript
+const filterLucky = x => {
+  return x.filter(el => el.toString().includes(7));
+}
+```
