@@ -2247,3 +2247,7 @@ const filterLucky = x => {
   return x.filter(el => el.toString().includes(7));
 }
 ```
+* Simple Fun #152: Invite More Women?
+```javascript
+const inviteMoreWomen = L => L.reduce((ac, el) => ac + el, 0) > 0;
+```
