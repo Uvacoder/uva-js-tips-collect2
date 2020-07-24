@@ -2251,3 +2251,11 @@ const filterLucky = x => {
 ```javascript
 const inviteMoreWomen = L => L.reduce((ac, el) => ac + el, 0) > 0;
 ```
+* Row Weights
+```javascript
+function rowWeights(array) {
+  let first = array.filter((el, i) => i % 2 === 0).reduce((ac, el) => ac + el, 0);
+  let second = array.filter((el, i) => i % 2).reduce((ac, el) => ac + el, 0);
+  return [first, second];
+}
+```
