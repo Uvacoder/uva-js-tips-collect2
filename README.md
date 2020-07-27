@@ -2259,3 +2259,9 @@ function rowWeights(array) {
   return [first, second];
 }
 ```
+* Enumerable Magic #5- True for Just One?
+```javascript
+function one(arr, fun) {
+  return arr.filter(fun).length === 1;
+}
+```
