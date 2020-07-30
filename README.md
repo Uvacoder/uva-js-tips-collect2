@@ -2265,3 +2265,7 @@ function one(arr, fun) {
   return arr.filter(fun).length === 1;
 }
 ```
+* Simple validation of a username with regex
+```javascript
+const validateUsr = username => /^[a-z0-9\_]{4,16}$/.test(username);
+```
