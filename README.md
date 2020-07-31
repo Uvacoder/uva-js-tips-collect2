@@ -539,6 +539,9 @@ const validatePIN = pin => {
     return pin.length === 4 || pin.length === 6;
  }
 ```
+```javascript
+const validatePIN = pin => /^(\d{4}|\d{6})$/.test(pin);
+```
 * Credit Card Mask
 ```javascript
 function maskify(cc) {
