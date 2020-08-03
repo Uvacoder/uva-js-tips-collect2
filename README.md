@@ -2272,3 +2272,13 @@ function one(arr, fun) {
 ```javascript
 const validateUsr = username => /^[a-z0-9\_]{4,16}$/.test(username);
 ```
+* Show multiples of 2 numbers within a range
+```javascript
+function multiples(s1,s2,s3){
+  const arr = [];
+  for (let i = 1; i < s3; i++) {
+    if (i % s1 === 0 && i % s2 === 0) arr.push(i);
+  }
+  return arr;
+}
+```
