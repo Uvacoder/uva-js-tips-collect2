@@ -2282,3 +2282,9 @@ function multiples(s1,s2,s3){
   return arr;
 }
 ```
+* Short Long Short
+```javascript
+function solution(a, b) {
+  return a.length > b.length ? b + a + b : a + b + a;
+}
+```
