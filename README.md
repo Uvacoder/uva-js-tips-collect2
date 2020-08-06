@@ -2288,3 +2288,11 @@ function solution(a, b) {
   return a.length > b.length ? b + a + b : a + b + a;
 }
 ```
+* Valid Phone Number
+```javascript
+function validPhoneNumber(phoneNumber) {
+  const format = '() -'
+  const res = phoneNumber.replace(/[0-9]/g, '');
+  return format === res;
+}
+```
