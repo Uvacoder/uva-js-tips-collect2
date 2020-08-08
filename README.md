@@ -2296,3 +2296,10 @@ function validPhoneNumber(phoneNumber) {
   return format === res;
 }
 ```
+* Array element parity
+```javascript
+function solve(arr) {
+  const arrFiltered = arr.filter(el => arr.indexOf(-el) === -1);
+  return arrFiltered[0];
+}
+```
