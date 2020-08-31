@@ -2326,3 +2326,9 @@ function correctPolishLetters (string) {
     .replace(/ż/g,'z');
   }
 ```
+* Ones and Zeros
+```javascript
+const binaryArrayToNumber = arr => {
+  return parseInt(arr.join(''), 2);
+}
+```
