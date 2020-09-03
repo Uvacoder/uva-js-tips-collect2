@@ -2332,3 +2332,9 @@ const binaryArrayToNumber = arr => {
   return parseInt(arr.join(''), 2);
 }
 ```
+* Training JS #29: methods of arrayObject---concat() and join()
+```javascript
+function bigToSmall(arr) {
+  return [].concat(...arr).sort((a, b) => b - a).join('>');
+}
+```
