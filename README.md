@@ -2338,3 +2338,6 @@ function bigToSmall(arr) {
   return [].concat(...arr).sort((a, b) => b - a).join('>');
 }
 ```
+```javascript
+const bigToSmall = arr => arr.reduce((acc, cur) => acc.concat(cur)).sort((a, b) => b - a).join('>');
+```
