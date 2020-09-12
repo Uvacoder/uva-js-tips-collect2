@@ -2341,3 +2341,9 @@ function bigToSmall(arr) {
 ```javascript
 const bigToSmall = arr => arr.reduce((acc, cur) => acc.concat(cur)).sort((a, b) => b - a).join('>');
 ```
+* Add new item (collections are passed by reference)
+```javascript
+function addExtra(listOfNumbers){
+  return listOfNumbers.concat(1);
+}
+```
