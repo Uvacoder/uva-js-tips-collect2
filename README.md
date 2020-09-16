@@ -2347,8 +2347,3 @@ function addExtra(listOfNumbers){
   return listOfNumbers.concat(1);
 }
 ```
-```javascript
-function addExtra(listOfNumbers) {
-    return [...listOfNumbers, 1];
-}
-```
