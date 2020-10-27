@@ -2352,3 +2352,23 @@ function addExtra(listOfNumbers) {
     return [...listOfNumbers, 1];
 }
 ```
+* Longest vowel chain
+```javascript
+function solve(s){
+  const str = 'aouei';
+  let count = 0;
+  let max = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (str.includes(s[i])) {
+      count++; 
+      if (count > max) {
+          max = count;
+      }
+    }
+    else {
+      count = 0;
+    }
+  }
+  return max;
+}
+```
