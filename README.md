@@ -2372,3 +2372,19 @@ function solve(s){
   return max;
 }
 ```
+```javascript
+function solve(str) {
+    let vowels = [],
+        counter = 0;
+    for (let char of str) {
+        if ('aeiou'.includes(char))
+            vowels.push(char);
+        else {
+            if (vowels.length > counter) counter = vowels.length;
+            vowels = [];
+        }
+    }
+    if (vowels.length === str.length) counter = vowels.length;
+    return counter;
+}
+```
