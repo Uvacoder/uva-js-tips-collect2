@@ -2412,3 +2412,13 @@ function sortArray(a1, a2) {
     return res;
 }
 ```
+* Sort with a sorting array
+```javascript
+function sort(initialArray, sortingArray) {
+  const arr = [];
+  for (let i = 0; i < sortingArray.length; i++) {
+    arr[sortingArray[i]] = initialArray[i];
+  }
+  return arr;
+}
+```
