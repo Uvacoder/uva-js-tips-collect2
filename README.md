@@ -2422,3 +2422,8 @@ function sort(initialArray, sortingArray) {
   return arr;
 }
 ```
+
+* Freudian translator
+```javascript
+const toFreud = str => str.replace(/\S+/g, 'sex');
+```
