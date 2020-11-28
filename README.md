@@ -2427,3 +2427,6 @@ function sort(initialArray, sortingArray) {
 ```javascript
 const toFreud = str => str.replace(/\S+/g, 'sex');
 ```
+```javascript
+const toFreud = str => str.replace(/[^ ]+/g, 'sex');
+```
