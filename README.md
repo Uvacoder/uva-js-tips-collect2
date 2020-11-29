@@ -2430,3 +2430,10 @@ const toFreud = str => str.replace(/\S+/g, 'sex');
 ```javascript
 const toFreud = str => str.replace(/[^ ]+/g, 'sex');
 ```
+```javascript
+function toFreud(string) {
+  if (string.length === 0) return "";
+  const arr = string.split(' ');
+  return arr.map(el => 'sex').join(' ');
+}
+```
