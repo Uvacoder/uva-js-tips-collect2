@@ -2422,7 +2422,6 @@ function sort(initialArray, sortingArray) {
   return arr;
 }
 ```
-
 * Freudian translator
 ```javascript
 const toFreud = str => str.replace(/\S+/g, 'sex');
@@ -2435,5 +2434,16 @@ function toFreud(string) {
   if (string.length === 0) return "";
   const arr = string.split(' ');
   return arr.map(el => 'sex').join(' ');
+}
+```
+* A Rule of Divisibility by 7
+```javascript
+function seven(m) {
+  let count = 0;
+    while (m > 99) {
+      m = parseInt(m / 10) - (2 * (m % 10));
+      count++;
+    }
+  return [m, count];
 }
 ```
