@@ -2447,3 +2447,17 @@ function seven(m) {
   return [m, count];
 }
 ```
+* Training JS #11: loop statement --break,continue
+```javascript
+function grabDoll(dolls){
+  const bag=[];
+  for (let i = 0; i < dolls.length; i++) {
+    if (dolls[i] === "Hello Kitty" || dolls[i] === "Barbie doll") {
+      bag.push(dolls[i]);
+    }
+    if (bag.length === 3) break;
+    else continue;
+  }
+  return bag;
+}
+```
