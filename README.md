@@ -2480,3 +2480,6 @@ function reverseList(list) {
   return rev;
 }
 ```
+```javascript
+const reverseList = (list) => list.reverse();
+```
