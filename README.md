@@ -2459,3 +2459,14 @@ function grabDoll(dolls){
   return bag;
 }
 ```
+* Find the missing element between two arrays
+```javascript
+function findMissing(arr1, arr2) {
+  const newArr1 = arr1.sort((a, b) => a - b);
+  const newArr2 = arr2.sort((a, b) => a - b);
+  for (let i = 0; i < newArr1.length; i++) {
+    if (newArr2[i] !== newArr1[i])
+      return newArr1[i];
+  }
+}
+```
