@@ -2505,3 +2505,8 @@ function validPass(pass){
   return (/[0-9]/g.test(str) && /[a-zA-Z]/g.test(str) && str === pass) ? 'VALID' : 'INVALID';
 }
 ```
+```javascript
+function validPass(password){
+  return /(?=.+[a-z])(?=.+\d)^[a-z\d]{3,20}$/i.test(password) ? 'VALID' : 'INVALID';
+}
+```
