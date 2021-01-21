@@ -2493,5 +2493,15 @@ const buy = function(x, arr){
     }
   }
   return null;
-};
+}
+```
+* Validate my Password
+```javascript
+function validPass(pass){
+  if (pass.length <= 3 || pass.length >= 20) {
+    return 'INVALID';
+  }
+  let str = pass.replace(/[^0-9a-zA-Z]/g, '');
+  return (/[0-9]/g.test(str) && /[a-zA-Z]/g.test(str) && str === pass) ? 'VALID' : 'INVALID';
+}
 ```
