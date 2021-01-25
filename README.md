@@ -2543,3 +2543,9 @@ function gooseFilter (birds) {
   return birds.filter(el => !geese.includes(el));
 }
 ```
+* Friend or Foe?
+```javascript
+function friend(friends){
+  return friends.filter(el => el.length === 4);
+}
+```
