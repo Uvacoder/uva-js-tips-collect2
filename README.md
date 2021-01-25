@@ -2530,3 +2530,9 @@ function disemvowel(str) {
   return str.replace(/[aouei]/ig, '');
 }
 ```
+* List Filtering
+```javascript
+function filter_list(l) {
+  return l.filter(el => typeof(el) === 'number');
+}
+```
