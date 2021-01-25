@@ -2518,3 +2518,9 @@ function validPass(password) {
   return t1 && t2 && t3 ? "VALID" : "INVALID";
 }
 ```
+* Are arrow functions odd?
+```javascript
+function odds(values){
+  return values.filter(el => el % 2 !== 0);
+}
+```
