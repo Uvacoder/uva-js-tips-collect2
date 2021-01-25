@@ -2524,3 +2524,9 @@ function odds(values){
   return values.filter(el => el % 2 !== 0);
 }
 ```
+* Disemvowel Trolls
+```javascript
+function disemvowel(str) {
+  return str.replace(/[aouei]/ig, '');
+}
+```
