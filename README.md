@@ -2543,6 +2543,18 @@ function gooseFilter (birds) {
   return birds.filter(el => !geese.includes(el));
 }
 ```
+```javascript
+function gooseFilter (birds) {
+  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  const res = [];
+  for (let bird of birds) {
+    if (!geese.includes(bird)) {
+      res.push(bird);
+    }
+  }
+  return res;
+}
+```
 * Friend or Foe?
 ```javascript
 function friend(friends){
