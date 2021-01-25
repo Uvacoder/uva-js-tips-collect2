@@ -2536,3 +2536,10 @@ function filter_list(l) {
   return l.filter(el => typeof(el) === 'number');
 }
 ```
+* Filter out the geese
+```javascript
+function gooseFilter (birds) {
+  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(el => !geese.includes(el));
+}
+```
