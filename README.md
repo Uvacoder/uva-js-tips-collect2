@@ -2569,3 +2569,9 @@ function barTriang(p1, p2, p3){
   return [+x.toFixed(4), +y.toFixed(4)];
 }
 ```
+* Take an Arrow to the knee, Functionally
+```javascript
+const ArrowFunc = function(arr) {
+  return arr.map(el => String.fromCharCode(el)).join(''); 
+}
+```
