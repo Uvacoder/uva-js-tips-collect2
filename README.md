@@ -2575,3 +2575,9 @@ const ArrowFunc = function(arr) {
   return arr.map(el => String.fromCharCode(el)).join(''); 
 }
 ```
+* Convert an array of strings to array of numbers
+```javascript
+function toNumberArray(stringarray) {
+  return stringarray.map(el => +el);
+}
+```
