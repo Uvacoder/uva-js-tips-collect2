@@ -2581,3 +2581,15 @@ function toNumberArray(stringarray) {
   return stringarray.map(el => +el);
 }
 ```
+* Javascript filter - 1
+```javascript
+function searchNames(logins) {
+  const res = [];
+  for (let i = 0; i < logins.length; i++) {
+    if (logins[i][0][logins[i][0].length - 1] === '_') {
+      res.push(logins[i]);
+    }
+  }
+  return res;
+}
+```
