@@ -2603,3 +2603,8 @@ function generateIntegers(m, n) {
   return res;
 }
 ```
+* Coefficients of the Quadratic Equation
+```javascript
+const quadratic = (x1, x2) => [1, - x2 - x1, x1 * x2];
+```
+
