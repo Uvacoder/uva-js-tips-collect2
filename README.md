@@ -2593,3 +2593,13 @@ function searchNames(logins) {
   return res;
 }
 ```
+* Series of integers from m to n
+```javascript
+function generateIntegers(m, n) {
+  const res = [];
+  for (let i = m; i <= n; i++) {
+    res.push(i);
+  }
+  return res;
+}
+```
