@@ -2607,4 +2607,17 @@ function generateIntegers(m, n) {
 ```javascript
 const quadratic = (x1, x2) => [1, - x2 - x1, x1 * x2];
 ```
-
+* String array duplicates
+```javascript
+function dup(s) {
+  const res = [];
+  for (let i = 0; i < s.length; i++) {
+    let word = '';
+    for (let j = 0; j < s[i].length; j++) {
+      if (s[i][j] !== s[i][j + 1]) word += s[i][j];
+    }
+    res.push(word);
+  }
+  return res;
+}
+```
