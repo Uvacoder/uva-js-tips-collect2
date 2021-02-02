@@ -2621,3 +2621,8 @@ function dup(s) {
   return res;
 }
 ```
+```javascript
+function dup(array) {
+  return array.map(word => word.split('').filter( (letter, index) => letter !== word[index + 1]).join(''))
+}
+```
