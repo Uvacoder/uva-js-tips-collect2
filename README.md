@@ -2626,3 +2626,9 @@ function dup(array) {
   return array.map(word => word.split('').filter( (letter, index) => letter !== word[index + 1]).join(''))
 }
 ```
+* max diff - easy
+```javascript
+function maxDiff(list) {
+  return list.length === 0 ? 0 : Math.max(...list) - Math.min(...list);
+}
+```
