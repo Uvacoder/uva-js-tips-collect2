@@ -2632,3 +2632,9 @@ function maxDiff(list) {
   return list.length === 0 ? 0 : Math.max(...list) - Math.min(...list);
 }
 ```
+* Javascript filter - 1
+```javascript
+function searchNames(logins) {
+  return logins.filter(el => el[0][el[0].length - 1] === '_');
+}
+```
