@@ -2575,6 +2575,12 @@ const ArrowFunc = function(arr) {
   return arr.map(el => String.fromCharCode(el)).join(''); 
 }
 ```
+* Between Extremes
+```javascript
+function betweenExtremes(numbers) {
+    return Math.max(...numbers) - Math.min(...numbers);
+}
+```
 * Convert an array of strings to array of numbers
 ```javascript
 function toNumberArray(stringarray) {
