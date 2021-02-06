@@ -2656,3 +2656,9 @@ function validParentheses(parens){
   return count === 0;
 }
 ```
+* All Star Code Challenge #4
+```javascript
+function getCollege(player){
+  return player['college'];
+}
+```
