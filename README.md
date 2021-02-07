@@ -2662,3 +2662,14 @@ function getCollege(player){
   return player['college'];
 }
 ```
+* Count letters in string
+```javascript
+function letterCount(s){
+  const obj = {};
+  for (let el of s) {
+    if (obj[el]) obj[el]++;
+      else obj[el] = 1;
+  }
+  return obj;
+}
+```
