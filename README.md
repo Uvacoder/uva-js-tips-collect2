@@ -2673,3 +2673,18 @@ function letterCount(s){
   return obj;
 }
 ```
+* Scramblies
+```javascript
+function scramble(str1, str2) {
+  const dict = {};
+  for (let i = 0; i < str1.length; i++) {
+    if (dict[str1[i]]) dict[str1[i]]++;
+    else dict[str1[i]] = 1;
+  }
+  for (let i = 0; i < str2.length; i++) {
+    if (dict[str2[i]]) dict[str2[i]]--;
+    else return false;
+  }
+  return true;
+}
+```
