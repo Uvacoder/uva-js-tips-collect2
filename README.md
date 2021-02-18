@@ -2699,3 +2699,15 @@ function strCount(obj){
   return count;
 }
 ```
+* Holiday III - Fire on the boat
+```javascript
+function fireFight(s){
+  const arr = s.split(' ');
+  const res = [];
+  for (let el of arr) {
+    if (el !== 'Fire') res.push(el);
+    else res.push('~~')
+  }
+  return res.join(' ');
+}
+```
