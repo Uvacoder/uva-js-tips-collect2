@@ -2722,3 +2722,15 @@ const isAnagram = function(test, original) {
   return JSON.stringify(sorted1) === JSON.stringify(sorted2);
 }
 ```
+* Will the present fit?
+```javascript
+function willFit(present, box){
+  const pSorted = present.sort((a, b) => a - b);
+  const bSorted = box.sort((a, b) => a - b);
+  for (let i = 0; i < 3; i++) {
+    if (pSorted[i] >= bSorted[i] - 1)
+      return false;
+  }
+  return true;
+}
+```
