@@ -2714,3 +2714,11 @@ function fireFight(s){
 ```javascript
 const fireFight = s => s.replace(/Fire/g, '~~');
 ```
+* Anagram Detection
+```javascript
+const isAnagram = function(test, original) {
+  const sorted1 = test.toLowerCase().split('').sort();
+  const sorted2 = original.toLowerCase().split('').sort();
+  return JSON.stringify(sorted1) === JSON.stringify(sorted2);
+}
+```
