@@ -2711,3 +2711,6 @@ function fireFight(s){
   return res.join(' ');
 }
 ```
+```javascript
+const fireFight = s => s.replace(/Fire/g, '~~');
+```
