@@ -2763,3 +2763,11 @@ function consecutive(arr) {
   return res.length;
 }
 ```
+```javascript
+function consecutive(arr) {
+  const res = [];
+  const max = Math.max(...arr);
+  const min = Math.min(...arr);
+  return arr.length ? max - min + 1 - arr.length : 0;
+}
+```
