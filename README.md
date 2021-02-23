@@ -2734,3 +2734,7 @@ function willFit(present, box){
   return true;
 }
 ```
+* Find min and max
+```javascript
+const getMinMax = arr => [Math.min(...arr), Math.max(...arr)];
+```
