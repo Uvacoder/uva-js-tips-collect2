@@ -2738,3 +2738,28 @@ function willFit(present, box){
 ```javascript
 const getMinMax = arr => [Math.min(...arr), Math.max(...arr)];
 ```
+* How many consecutive numbers are needed?
+```javascript
+function consecutive(arr) {
+  const total = [];
+  const res = [];
+  let flag = false;
+  
+  const max = Math.max(...arr);
+  const min = Math.min(...arr);
+  for (let i = min; i <= max; i++) {
+    total.push(i);
+  }
+  for (let i = 0; i < total.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (total[i] === arr[j]) {
+        flag = true;
+        break;
+      }
+    }
+    if (!flag) res.push(total[i]);
+    flag = false;
+  }
+  return res.length;
+}
+```
