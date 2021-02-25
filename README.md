@@ -2771,3 +2771,19 @@ function consecutive(arr) {
   return arr.length ? max - min + 1 - arr.length : 0;
 }
 ```
+```javascript
+function consecutive(arr) {
+  const total = [];
+  const res = [];
+  
+  const max = Math.max(...arr);
+  const min = Math.min(...arr);
+  for (let i = min; i <= max; i++) {
+    total.push(i);
+  }
+  for (let i = 0; i < total.length; i++) {
+    if (!arr.includes(total[i])) res.push(res[i])
+  }
+  return res.length;
+}
+```
