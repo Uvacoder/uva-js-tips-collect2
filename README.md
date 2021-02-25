@@ -2787,3 +2787,9 @@ function consecutive(arr) {
   return res.length;
 }
 ```
+* Make them bark!
+```javascript
+Dog.prototype.bark = function () {
+  return 'Woof!';
+}
+```
