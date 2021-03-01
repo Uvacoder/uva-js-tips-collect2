@@ -2829,3 +2829,21 @@ function alphabetPosition(text) {
   return res.join(' ');
 }
 ```
+* Largest prime number containing n digit
+```javascript
+const largest = (n) => {
+  if(!Number.isInteger(n)|| n < 1) return false;
+  let x = Math.pow(10, n);
+  while (!isPrime(x)) {
+    x--;
+  }
+  return x;
+}
+
+function isPrime(n){
+  for (let i = 2; i <= n / 2; i++) {
+    if(n % i === 0) return false;
+  }
+  return true;
+}
+```
