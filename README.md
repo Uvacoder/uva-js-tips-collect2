@@ -2847,3 +2847,7 @@ function isPrime(n){
   return true;
 }
 ```
+* The Office IV - Find a Meeting Room
+```javascript
+const meeting = x => x.indexOf('O') === -1 ? 'None available!' : x.indexOf('O');
+```
