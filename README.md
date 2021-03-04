@@ -2851,3 +2851,13 @@ function isPrime(n){
 ```javascript
 const meeting = x => x.indexOf('O') === -1 ? 'None available!' : x.indexOf('O');
 ```
+* Smallest value of an array
+```javascript
+function min(arr, toReturn) {
+  if (toReturn === 'value') {
+    return Math.min(...arr);
+  } else {
+    return arr.indexOf(Math.min(...arr))
+  }
+}
+```
