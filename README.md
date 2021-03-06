@@ -2867,3 +2867,11 @@ function consecutive(arr, a, b) {
   return Math.abs(arr.indexOf(a) - arr.indexOf(b)) === 1;
 }
 ```
+* Cat Years, Dog Years (2)
+```javascript
+const ownedCatAndDog = function(catYears, dogYears) {
+  let ownedCat = catYears < 15 ? 0 : catYears < 24 ? 1 : Math.trunc((catYears - 24) / 4) + 2;
+  let ownedDog = dogYears < 15 ? 0 : dogYears < 24 ? 1 : Math.trunc((dogYears - 24) / 5) + 2;
+  return [ownedCat,ownedDog];
+}
+```
