@@ -2875,3 +2875,15 @@ const ownedCatAndDog = function(catYears, dogYears) {
   return [ownedCat,ownedDog];
 }
 ```
+* Arithmetic progression
+```javascript
+function arithmeticSequenceElements(a,r,n) {
+  let res = [];
+  let i = 0;
+  while (i < n) {
+    res[i] = a + i * r;
+    i++;
+  }
+  return res.join(', ');
+}
+```
